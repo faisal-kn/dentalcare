@@ -1,0 +1,200 @@
+.banner_video {
+  width: 100%;
+  z-index: -1;
+  visibility: visible;
+  overflow-y: hidden;
+  position: absolute;
+  top: 5rem;
+  pointer-events: none;
+  transition: display 0.3s;
+  aspect-ratio: 1.7 777777777777777;
+}
+.banner_text {
+  padding: 15% 8%;
+  color: white;
+}
+
+.banner_inner_text {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.banner_heading {
+  font-family: "Times New Roman", Times, serif;
+  padding-top: 5px;
+  font-size: 3.5em;
+}
+.row_2 {
+  background-image: url("../img/blue-grain-bg.jpg");
+  display: flex;
+  align-items: center;
+}
+.my_cards {
+  margin: 6% 5%;
+  padding: 10% 5%;
+  border: 1px solid #f4f6f3;
+  color: white;
+  background-color: transparent;
+  border-radius: 0px 40px 0px 40px;
+}
+
+.row_image {
+  width: 100%;
+}
+
+.downsentence {
+  border-left: 2px solid orange;
+  padding-left: 15px;
+}
+.row_3 {
+  padding: 4rem 5rem;
+}
+
+.comma_img {
+  font-size: 30px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.star_row {
+  display: flex;
+  flex-direction: row;
+  color: yellow;
+}
+
+.underline_text {
+  text-decoration: underline;
+}
+.my_card,
+.my_card_3 {
+  padding: 20px;
+  padding-bottom: 0px;
+  margin-bottom: 20px;
+  padding-right: 0px;
+  border-radius: 0px 40px 0px 40px;
+}
+.my_card_3 {
+  width: 25rem;
+}
+.card_author {
+  border-top: 1px solid black;
+  margin: 0px 20px;
+  margin-top: 2rem;
+  padding-top: 1rem;
+}
+.card_triangle_dot {
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: end;
+}
+.row_4 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #f4f6f3;
+}
+.my_custom_cards {
+  height: 30rem;
+  margin: 0 auto;
+  transition: 0.2s ease-in;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 1rem;
+  border: 0px;
+}
+
+.my_custom_cards_img {
+  height: 20rem;
+}
+
+.my_custom_cards,
+.my_custom_cards_img {
+  border-radius: 30px 30px 0px 0px;
+}
+
+.card_buttons {
+  width: max-content;
+  color: black;
+  text-transform: uppercase;
+}
+
+.my_custom_cards:hover {
+  background-image: initial;
+  background-color: #ffffff;
+  box-shadow: 0px 5px 15px -6px rgb(0 0 0 / 30%);
+  transform: translateX(0px) translateY(-15px) !important;
+  transition: transform 300ms ease 0ms, box-shadow 300ms ease 0ms,
+    background-color 300ms ease 0ms, background-image 300ms ease 0ms;
+  border-radius: 20px 20px 0px 0px;
+}
+.row_5 {
+  padding: 4rem 0rem;
+}
+.row_5_img {
+  height: "100vh";
+  margin-top: "-70px";
+  font-size: "50px";
+  background-size: "cover";
+  background-repeat: "no-repeat";
+  width: 100%;
+  height: 80%;
+}
+.row_6 {
+  /* padding: 4rem 4rem;
+  width: 90%; */
+}
+.row6_card {
+  border: 2px solid #266980;
+  color: #266980;
+  border-radius: 30px 0px 30px 0px;
+}
+.row6_col1 {
+  padding: 3.5rem;
+  justify-content: space-between;
+}
+.row6_col2 {
+  padding: 2rem 2rem 0rem 2rem;
+  background-color: #266980;
+  color: white;
+  border-radius: 0px 0px 26px 0px;
+}
+.row_7 {
+  padding: 4rem 12rem;
+  display: flex;
+  justify-content: center;
+}
+.footer_icons {
+  color: grey;
+  width: 50%;
+  height: 70px;
+}
+@media screen and (max-width: 968px) {
+  .my_custom_cards_img {
+    height: 23rem;
+  }
+  .my_custom_cards {
+    height: 35rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .banner_text {
+    padding: 10% 5%;
+  }
+  .banner_inner_text {
+    font-size: 0.9em;
+  }
+  .banner_heading {
+    font-size: 2em;
+  }
+  .row_image {
+    padding-top: 2rem;
+  }
+  .my_card_3 {
+    width: inherit;
+  }
+  .row6_col1 {
+    padding: 2rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .row_image {
+    width: inherit;
+  }
+}
