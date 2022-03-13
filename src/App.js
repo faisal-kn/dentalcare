@@ -1,9 +1,13 @@
 import MyNavbar from "./components/Navbar";
+import AboutUs from "./pages/AboutUs";
+import Warrenty from "./pages/Warrenty";
 
 function App() {
   return (
     <div className="App">
-      <MyNavbar/>
+      <MyNavbar />
+      {/* <AboutUs /> */}
+      <Warrenty />
     </div>
   );
 }
