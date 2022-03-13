@@ -1,4 +1,5 @@
 import MyNavbar from "./components/Navbar";
+import Footer from "./components/Footer"
 import AboutUs from "./pages/AboutUs";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
@@ -15,6 +16,7 @@ function App() {
         <Route path="/aboutUs" element={<AboutUs />} />
         <Route path="/warrenty" element={<Warrenty />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
