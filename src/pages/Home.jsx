@@ -149,11 +149,23 @@ Surgical
 				</Container>
 			</div>
 			<div className={styles.row_5}>
-				{console.log(row5_img)}
-				<div className={styles.row_5_img} style={{backgroundImage: row5_img}}></div>
-				<Container className={styles.banner_text}>
-
-				</Container>
+					<Container fluid style={{ padding: "30px 0 30px 0" }}>
+				<div className={`${styles.parallax} ${styles.p2}`}>
+				<div className={styles.card}>
+					<h1 style={{ fontSize: "50px", paddingBottom: "20px" }}>
+					How It Works
+					</h1>
+					<ul style={{ fontSize: "18px" }}>
+					<li>Our warranty applies to all restorative dental treatments</li>
+					<li>
+						Visit Village Dental every 6 months for routine cleanings &
+						exams
+					</li>
+					<li>If something breaks, contact us. We’ll fix it.</li>
+					</ul>
+				</div>
+				</div>
+			</Container>
 			</div>
 			<Container fluid='md' className={styles.row_6}>
 				<Card className={styles.row6_card}>
