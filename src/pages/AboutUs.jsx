@@ -16,11 +16,10 @@ const AboutUs = () => {
         if (prevState === dummyData[dummyData.length - 1]) {
           return dummyData[0];
         } else {
-          console.log(prevState);
           return dummyData[dummyData.indexOf(prevState) + 1];
         }
       });
-    }, 5000);
+    }, 10000);
   }, []);
 
   useEffect(() => {}, [currentText]);
@@ -36,17 +35,29 @@ const AboutUs = () => {
           effect="blur"
           src={about}
           style={{
-            height: "95vh",
+            maxHeight: "90vh",
             minWidth: "100vw",
             objectFit: "cover",
             opacity: "0.7",
+            backgroundFit: "cover",
+            width: "inherit",
           }}
           alt=""
         />
         <div className={styles.landingTitle}>
-          ABOUT VILLAGE DENTAL
-          <h2>Building lifetime relationships through positive experiences</h2>
-          <p>OR CALL (303) 220-7662</p>
+          <span style={{ fontSize: "20px", paddingBottom: "10px" }}>
+            ABOUT VILLAGE DENTAL
+          </span>
+          <span
+            style={{
+              
+            }}
+            className={styles.headingTitle}
+          >
+            Building lifetime relationships through
+            <br /> positive experiences
+          </span>
+          <h5>OR CALL (303) 220-7662</h5>
         </div>
       </div>
       <Container className={styles.firstContainer}>
