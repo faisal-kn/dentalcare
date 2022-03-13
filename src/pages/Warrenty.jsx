@@ -125,7 +125,24 @@ const Warrenty = () => {
           </Col>
         </Row>
       </Container>
-      <Container>
+      <Container fluid style={{ padding: "30px 0 30px 0" }}>
+        <div className={`${styles.parallax} ${styles.p2}`}>
+          <div className={styles.card}>
+            <h1 style={{ fontSize: "50px", paddingBottom: "20px" }}>
+              How It Works
+            </h1>
+            <ul style={{ fontSize: "18px" }}>
+              <li>Our warranty applies to all restorative dental treatments</li>
+              <li>
+                Visit Village Dental every 6 months for routine cleanings &
+                exams
+              </li>
+              <li>If something breaks, contact us. We’ll fix it.</li>
+            </ul>
+          </div>
+        </div>
+      </Container>
+      <Container style={{ padding: "40px 0 40px 0" }}>
         <Row>
           <Col
             lg={6}
