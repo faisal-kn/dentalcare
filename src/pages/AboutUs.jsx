@@ -35,29 +35,17 @@ const AboutUs = () => {
           effect="blur"
           src={about}
           style={{
-            maxHeight: "90vh",
+            height: "95vh",
             minWidth: "100vw",
             objectFit: "cover",
             opacity: "0.7",
-            backgroundFit: "cover",
-            width: "inherit",
           }}
           alt=""
         />
         <div className={styles.landingTitle}>
-          <span style={{ fontSize: "20px", paddingBottom: "10px" }}>
-            ABOUT VILLAGE DENTAL
-          </span>
-          <span
-            style={{
-              
-            }}
-            className={styles.headingTitle}
-          >
-            Building lifetime relationships through
-            <br /> positive experiences
-          </span>
-          <h5>OR CALL (303) 220-7662</h5>
+          ABOUT VILLAGE DENTAL
+          <h2>Building lifetime relationships through positive experiences</h2>
+          <p>OR CALL (303) 220-7662</p>
         </div>
       </div>
       <Container className={styles.firstContainer}>
@@ -197,16 +185,17 @@ const AboutUs = () => {
           </Col>
           <Col>
             <hr />
-            <Row>
+            <Row style={{ paddingTop: "30px" }}>
               <Col lg={6}>
                 <img
                   src="https://www.villagedentaldtc.com/wp-content/uploads/2021/09/dark-blue-triangle-dots-village-dental.svg"
                   alt=""
                   className={styles.imgTriangle}
+                  // style={{ paddingBottom: "30px" }}
                 ></img>
 
-                <h2>Dr. Steven Zervas</h2>
-                <h6>Why dentistry?</h6>
+                <h2 style={{ padding: "20px 0 20px 0" }}>Dr. Steven Zervas</h2>
+                <h6 style={{ padding: "0px 0 10px 0" }}>Why dentistry?</h6>
                 <p>
                   I’m a dentist because it has always been my desire to help
                   people in a healthcare environment. Growing up in my dad’s and
@@ -217,14 +206,16 @@ const AboutUs = () => {
                 </p>
               </Col>
               <Col>
-                <h6>Education</h6>
+                <h6 style={{ padding: "0px 0 10px 0" }}>Education</h6>
                 <ol>
                   <li>
                     BA in Biology and World Religions, Westminster College
                   </li>
                   <li>DDS, University of Oklahoma</li>
                 </ol>
-                <h6>Out and about in Denver/Greenwood Village</h6>
+                <h6 style={{ padding: "0px 0 10px 0" }}>
+                  Out and about in Denver/Greenwood Village
+                </h6>
                 <ol>
                   <li>Running in Wash Park</li>
                   <li>Concerts at the Mission Ballroom and Red Rocks</li>
