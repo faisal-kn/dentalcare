@@ -1,9 +1,9 @@
 import about from "../assets/about.jpg";
-import styles from "./warrenty.module.css";
+import styles from "./warranty.module.css";
 import { Container, Col, Row } from "react-bootstrap";
 import { useState, useEffect } from "react";
 
-const Warrenty = () => {
+const Warranty = () => {
   const [width, setWidth] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -142,7 +142,7 @@ const Warrenty = () => {
           </div>
         </div>
       </Container>
-      <Container style={{ padding: "40px 0 40px 0" }}>
+      <Container style={{ padding: "40px" }}>
         <Row>
           <Col
             lg={6}
@@ -184,4 +184,4 @@ const Warrenty = () => {
   );
 };
 
-export default Warrenty;
+export default Warranty;

@@ -1,9 +1,9 @@
 import MyNavbar from "./components/Navbar";
-import Footer from "./components/Footer"
+import Footer from "./components/Footer";
 import AboutUs from "./pages/AboutUs";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
-import Warrenty from "./pages/Warrenty";
+import Warranty from "./pages/Warranty";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -13,8 +13,8 @@ function App() {
       <Routes>
         <Route index element={<Home />} />
         <Route path="/services" element={<Services />} />
-        <Route path="/aboutUs" element={<AboutUs />} />
-        <Route path="/warrenty" element={<Warrenty />} />
+        <Route path="/aboutus" element={<AboutUs />} />
+        <Route path="/warranty" element={<Warranty />} />
       </Routes>
       <Footer />
     </div>
