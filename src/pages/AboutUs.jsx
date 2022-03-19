@@ -5,6 +5,7 @@ import { HiLocationMarker } from "react-icons/hi";
 import { BiTimeFive } from "react-icons/bi";
 import doctor from "../assets/doctor.jpg";
 import about from "../assets/about.jpg";
+import doctor1 from "../assets/doctor1.jpg";
 
 const dummyData = [" empathy", " integrity", " gratitude"];
 const AboutUs = () => {
@@ -99,7 +100,7 @@ const AboutUs = () => {
         </Row>
       </Container>
       <Container>
-        <Row style={{ padding: "100px 0 100px 0" }}>
+        <Row className={styles["doctor-row"]} style={{ margin: "20px" }}>
           <Col
             lg={4}
             className="d-flex justify-content-center align-items-center"
@@ -149,7 +150,7 @@ const AboutUs = () => {
             </Row>
           </Col>
         </Row>
-        <Row style={{ padding: "100px 0 100px 0" }}>
+        <Row className={styles["doctor-row"]} style={{ margin: "20px" }}>
           <Col
             lg={4}
             className="d-flex justify-content-center align-items-center"
@@ -199,12 +200,17 @@ const AboutUs = () => {
             </Row>
           </Col>
         </Row>
-        <Row style={{ padding: "100px 0 100px 0" }}>
+        <Row className={styles["doctor-row"]} style={{ margin: "20px" }}>
           <Col
             lg={4}
             className="d-flex justify-content-center align-items-center"
           >
-            <img src={doctor} alt="a doctor" className={styles.imgUs} />
+            <img
+              src={doctor}
+              alt="a doctor"
+              className={styles.imgUs}
+              style={{ margin: "-20px" }}
+            />
           </Col>
           <Col>
             <hr />
@@ -250,19 +256,33 @@ const AboutUs = () => {
           </Col>
         </Row>
         <Row>
-          <Col></Col>
-          <Col>
-            <h2>Visit Us</h2>
+          <Col md={12} lg={5}>
+            <div className={` ${styles.somesection}`}>
+              <div className="row col-xs-6">
+                <img src={doctor1} alt="" className={styles.imgUs} />
+              </div>
+              <div className={`${styles["overlay-text"]}`}>VISIT US</div>
+            </div>
+          </Col>
+          <Col
+            md={12}
+            lg={7}
+            className="d-flex justify-content-center flex-column"
+          >
             <p>
               We’re conveniently located in the Denver Tech Center area. Find us
               on the 4th floor of the Triad Office Park building. Plenty of free
               parking available.
             </p>
-            <HiLocationMarker size="2em" />
-            5670 Greenwood Plaza Blvd., Suite 404 Greenwood Village, CO 80111
+            <div>
+              <HiLocationMarker size="2em" style={{ color: "#316A80" }} />
+              5670 Greenwood Plaza Blvd., Suite 404 Greenwood Village, CO 80111
+            </div>
             <br />
-            <BiTimeFive size="2em" />
-            Monday–Thursday: 7AM–3PM
+            <div>
+              <BiTimeFive size="2em" style={{ color: "#316A80" }} />
+              Monday–Thursday: 7AM–3PM
+            </div>
           </Col>
         </Row>
         <Row className={styles.mapContainer}>
