@@ -22,7 +22,7 @@
   bottom: 0;
   width: 30px;
   height: 4px;
-  background: #f8ac70;
+  background: grey;
 }
 .footer-links a {
   padding: 10px 0;
@@ -53,10 +53,10 @@
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
   transition: background 0.3s ease-in-out;
-  background: #f8ac70;
+  background: rgb(143, 141, 141);
 }
 .footer-social-links a:hover {
-  background: #f88e3d;
+  background: black;
 }
 /* g. Footer bottom section */
 .footer-bottom {

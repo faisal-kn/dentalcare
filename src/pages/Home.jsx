@@ -65,11 +65,7 @@ const Home = () => {
     const imgcheck3 = document.getElementById("check4");
     const imgcheck4 = document.getElementById("bottomani");
     const imgcheck5 = document.getElementById("topani");
-<<<<<<< HEAD
     
-=======
-
->>>>>>> eb72d4b4cbd0dda09f900c47ea74cc3546106975
     observer1.observe(check1);
     observer1.observe(check2);
     observer2.observe(imgcheck1);

@@ -38,7 +38,7 @@ const MyNavbar = () => {
               </a>
               <ul class="dropdown-menu dropdown-menu-right">
                 <li>
-                  <a class="dropdown-item" href="#">
+                  <a class="dropdown-item" href="/before-after">
                     BEFORE AND AFTER
                   </a>
                 </li>

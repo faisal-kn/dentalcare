@@ -40,7 +40,7 @@ function App() {
         <Route path="services/implants" element={<Implants />} />
         <Route path="/aboutUs" element={<AboutUs />} />
         <Route path="/warranty" element={<Warranty />} />
-        <Route path="/beforeafter" element={<BeforeAfter />} />
+        <Route path="/before-after" element={<BeforeAfter />} />
       </Routes>
       <Footer />
     </div>

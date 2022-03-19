@@ -1,4 +1,5 @@
 import React from 'react'
+import Banner from '../components/Banner';
 import ImageHolder from '../components/ImageHolder';
 import styles from './BeforeAfter.module.css'
 
@@ -28,7 +29,9 @@ export default function BeforeAfter() {
 	Crown Lengthening`},
 	];
   return (
-    <div style={{ margin: "25px 0" }}>
+	<>
+	<Banner/>
+    <div style={{ margin: "25px 0" ,backgroundColor:'white',paddingTop:'4rem'}}>
 				<h1 className={styles.imagehead}>Before/After</h1>
 				<div className={styles.imagegrid}>
 					{
@@ -37,7 +40,7 @@ export default function BeforeAfter() {
 						})
 					}
 				</div>
-
 			</div>
+	</>
   )
 }
