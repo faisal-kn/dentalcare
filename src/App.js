@@ -3,7 +3,7 @@ import Footer from "./components/Footer";
 import AboutUs from "./pages/AboutUs";
 import Home from "./pages/Home";
 import Services from "./pages/services/general/Services";
-import Warrenty from "./pages/Warrenty";
+import Warrenty from "./pages/Warranty";
 import { Routes, Route } from "react-router-dom";
 import NewNavbar from "./components/NewNavbar";
 import Botox from "./pages/services/general/Botox";
@@ -38,7 +38,7 @@ function App() {
         <Route path='services/surgical' element={<Surgical/>}/>
         <Route path='services/implants' element={<Implants/>}/>
         <Route path="/aboutUs" element={<AboutUs />} /> 
-        <Route path="/warrenty" element={<Warrenty />} />
+        <Route path="/warranty" element={<Warrenty />} />
       </Routes>
       <Footer />
     </div>
