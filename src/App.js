@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import Services from "./pages/services/Services";
 import Warrenty from "./pages/Warranty";
 import { Routes, Route } from "react-router-dom";
-import NewNavbar from "./components/NewNavbar";
+
 import Botox from "./pages/services/general/Botox";
 import Cleanings from "./pages/services/general/Cleanings";
 import Emergency from "./pages/services/general/Emergency";
@@ -17,7 +17,7 @@ import Veneers from "./pages/services/cosmetic/Veneers";
 import Cosmetic from "./pages/services/cosmetic/Cosmetic";
 import Surgical from "./pages/services/surgery/Surgical";
 import Implants from "./pages/services/surgery/Implants";
-
+import NewPatients from './pages/NewPatients';
 function App() {
   return (
     <div className="App">

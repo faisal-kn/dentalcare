@@ -100,7 +100,7 @@ const AboutUs = () => {
         </Row>
       </Container>
       <Container>
-        <Row style={{ padding: "100px 0 100px 0" }}>
+        <Row className={styles["doctor-row"]} style={{ margin: "20px" }}>
           <Col
             lg={4}
             className="d-flex justify-content-center align-items-center"
@@ -150,7 +150,7 @@ const AboutUs = () => {
             </Row>
           </Col>
         </Row>
-        <Row style={{ padding: "100px 0 100px 0" }}>
+        <Row className={styles["doctor-row"]} style={{ margin: "20px" }}>
           <Col
             lg={4}
             className="d-flex justify-content-center align-items-center"
@@ -200,12 +200,17 @@ const AboutUs = () => {
             </Row>
           </Col>
         </Row>
-        <Row style={{ padding: "100px 0 100px 0" }}>
+        <Row className={styles["doctor-row"]} style={{ margin: "20px" }}>
           <Col
             lg={4}
             className="d-flex justify-content-center align-items-center"
           >
-            <img src={doctor} alt="a doctor" className={styles.imgUs} />
+            <img
+              src={doctor}
+              alt="a doctor"
+              className={styles.imgUs}
+              style={{ margin: "-20px" }}
+            />
           </Col>
           <Col>
             <hr />
@@ -260,11 +265,15 @@ const AboutUs = () => {
               on the 4th floor of the Triad Office Park building. Plenty of free
               parking available.
             </p>
-            <HiLocationMarker size="2em" />
-            5670 Greenwood Plaza Blvd., Suite 404 Greenwood Village, CO 80111
+            <div>
+              <HiLocationMarker size="2em" style={{ color: "#316A80" }} />
+              5670 Greenwood Plaza Blvd., Suite 404 Greenwood Village, CO 80111
+            </div>
             <br />
-            <BiTimeFive size="2em" />
-            Monday–Thursday: 7AM–3PM
+            <div>
+              <BiTimeFive size="2em" style={{ color: "#316A80" }} />
+              Monday–Thursday: 7AM–3PM
+            </div>
           </Col>
         </Row>
         <Row className={styles.mapContainer}>
