@@ -17,7 +17,7 @@ import Veneers from "./pages/services/cosmetic/Veneers";
 import Cosmetic from "./pages/services/cosmetic/Cosmetic";
 import Surgical from "./pages/services/surgery/Surgical";
 import Implants from "./pages/services/surgery/Implants";
-
+import NewPatients from './pages/NewPatients';
 function App() {
   return (
     <div className="App">
@@ -39,6 +39,7 @@ function App() {
         <Route path="services/implants" element={<Implants />} />
         <Route path="/aboutUs" element={<AboutUs />} />
         <Route path="/warranty" element={<Warranty />} />
+        <Route path="/new-patients" element={<NewPatients />} />
       </Routes>
       <Footer />
     </div>
