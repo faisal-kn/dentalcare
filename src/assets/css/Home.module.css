@@ -1,16 +1,5 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap'); */
 
-.imagegrid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    
-}
-.imagehead{
-    text-align: center;
-    font-family: "Times New Roman", Times, serif;
-    font-weight:700;
-    font-size:"45px";
-}
 
 .banner_video {
   width: 100%;
@@ -353,11 +342,7 @@
     padding: 4rem 2rem;
   }
 }
-@media screen and (max-width: 800px) {
-  .imagegrid{
-    grid-template-columns: 1fr;
-  }
-}
+
 @media screen and (min-width: 768px) {
   .card {
     padding: 100px;
