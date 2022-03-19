@@ -8,7 +8,7 @@ import {AiFillStar} from 'react-icons/ai';
 import triangle_dot from '../../../assets/img/triangle.svg';
 import triangle_dot_white from '../../../assets/img/triangle_white.svg';
 import servicetag from '../../../assets/img/service_tag.svg';
-import {RiPriceTag2Fill} from 'react-icons/ri';
+import {RiPriceTag2Fill,RiDoubleQuotesR} from 'react-icons/ri';
 import badge2 from '../../../assets/img/badge2.svg';
 import Banner from '../../../components/Banner';
 
@@ -43,7 +43,7 @@ const Cleanings = () => {
 				<Row className='mt-4 pt-4'>
 					<Col>
 						<p>
-							<p className={home_styles.comma_img}>"</p>
+							<p className={home_styles.comma_img}><RiDoubleQuotesR/></p>
 						</p>
 						<p className={home_styles.banner_heading}>
 						Kind words from our patients

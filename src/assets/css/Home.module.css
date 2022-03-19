@@ -109,8 +109,8 @@
 }
 
 .my_cards {
-  margin: 6% 5%;
-  padding: 10% 5%;
+  margin: 5% 3%;
+  padding: 8% 5%;
   border: 1px solid #f4f6f3;
   color: white;
   background-color: transparent;
@@ -142,7 +142,7 @@
   padding-left: 15px;
 }
 .row_3 {
-  padding: 4rem 5rem;
+  padding: 4rem 1.5rem 4rem 5rem;
 }
 
 .comma_img {
@@ -152,7 +152,7 @@
 .star_row {
   display: flex;
   flex-direction: row;
-  color: yellow;
+  color: #e7ca71;
 }
 
 .underline_text {
@@ -166,9 +166,14 @@
   margin-bottom: 20px;
   padding-right: 0px;
   border-radius: 0px 40px 0px 40px;
+  /* width: 30rem; */
 }
 .my_card_3 {
-  width: 25rem;
+  width: 32.6%;
+}
+.my_card_cont {
+  display: flex;
+  justify-content: flex-end;
 }
 .card_author {
   border-top: 1px solid black;
@@ -252,7 +257,7 @@
   border-radius: 0px 0px 26px 0px;
 }
 .row_7 {
-  padding: 4rem 12rem;
+  padding: 4rem 2rem 4rem 6rem;
   display: flex;
   justify-content: center;
 }
@@ -291,12 +296,18 @@
   /* box-shadow: #fff 0px 0px 10px; */
   border-radius: 20px 0px 20px 0px;
 }
-@media screen and (max-width: 968px) {
+@media screen and (max-width: 991px) {
   .my_custom_cards_img {
     height: 23rem;
   }
   .my_custom_cards {
     height: 35rem;
+  }
+  .my_card_3 {
+    width: 100%;
+  }
+  .row_3 {
+    padding: 4rem 2rem 4rem 2rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -322,6 +333,9 @@
 @media screen and (max-width: 500px) {
   .row_image {
     width: inherit;
+  }
+  .row_3 {
+    padding: 4rem 2rem;
   }
 }
 

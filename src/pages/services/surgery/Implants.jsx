@@ -9,7 +9,7 @@ import {AiFillStar} from 'react-icons/ai';
 import triangle_dot from '../../../assets/img/triangle.svg';
 import triangle_dot_white from '../../../assets/img/triangle_white.svg';
 import D_img from '../../../assets/img/3d_imaging.jpg';
-import {RiPriceTag2Fill} from 'react-icons/ri';
+import {RiPriceTag2Fill,RiDoubleQuotesR} from 'react-icons/ri';
 import badge2 from '../../../assets/img/badge2.svg';
 
 
@@ -36,7 +36,7 @@ If your implant breaks, we’ll fix it at no cost</h2>
 				<Row>
 					<Col>
 						<p>
-							<p className={home_styles.comma_img}>"</p>
+							<p className={home_styles.comma_img}><RiDoubleQuotesR/></p>
 						</p>
 						<p className={home_styles.banner_heading}>
 						Kind words from our patients

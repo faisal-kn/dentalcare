@@ -2,7 +2,7 @@ import MyNavbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import AboutUs from "./pages/AboutUs";
 import Home from "./pages/Home";
-import Services from "./pages/services/general/Services";
+import Services from "./pages/services/Services";
 import Warrenty from "./pages/Warranty";
 import { Routes, Route } from "react-router-dom";
 import NewNavbar from "./components/NewNavbar";

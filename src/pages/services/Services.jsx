@@ -1,16 +1,16 @@
 import React from 'react';
 import {Accordion,Container, Row, Col, Card ,Button,useAccordionButton} from 'react-bootstrap';
-import home_styles from '../../../assets/css/Home.module.css';
-import service_styles from '../../../assets/css/Services.module.css';
-import row_2_img from '../../../assets/img/cardimg.jpg';
-import row_3_img from '../../../assets/img/ser_row2.jpg';
+import home_styles from '../../assets/css/Home.module.css';
+import service_styles from '../../assets/css/Services.module.css';
+import row_2_img from '../../assets/img/cardimg.jpg';
+import row_3_img from '../../assets/img/ser_row2.jpg';
 import {AiFillPlusCircle,AiFillStar} from 'react-icons/ai';
-import servicetag from '../../../assets/img/service_tag.svg';
-import triangle_dot from '../../../assets/img/triangle.svg';
-import triangle_dot_white from '../../../assets/img/triangle_white.svg';
-import badge from '../../../assets/img/badge.svg';
-import grad from '../../../assets/img/gradient.jpg';
-import Banner from '../../../components/Banner';
+import servicetag from '../../assets/img/service_tag.svg';
+import triangle_dot from '../../assets/img/triangle.svg';
+import triangle_dot_white from '../../assets/img/triangle_white.svg';
+import badge from '../../assets/img/badge.svg';
+import grad from '../../assets/img/gradient.jpg';
+import Banner from '../../components/Banner';
 
 const Services = () => {
 	function CustomToggle({ children, eventKey }) {

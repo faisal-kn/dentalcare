@@ -6,7 +6,7 @@ import row_2 from '../../../assets/img/invisalign_row2.png';
 import row2_2 from '../../../assets/about.jpg';
 import { Container ,Col,Row, Card,Button} from 'react-bootstrap';
 import D_img from '../../../assets/img/3d_imaging.jpg';
-import {RiPriceTag2Fill} from 'react-icons/ri';
+import {RiPriceTag2Fill,RiDoubleQuotesR} from 'react-icons/ri';
 import badge2 from '../../../assets/img/badge2.svg';
 import {AiFillStar} from 'react-icons/ai';
 import triangle_dot from '../../../assets/img/triangle.svg';
@@ -133,7 +133,7 @@ const Invisalign = () => {
 				<Row className='mt-2'>
 					<Col>
 						<p>
-							<p className={home_styles.comma_img}>"</p>
+							<p className={home_styles.comma_img}><RiDoubleQuotesR/></p>
 						</p>
 						<p className={home_styles.banner_heading}>
 						Kind words from our patients

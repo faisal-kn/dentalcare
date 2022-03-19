@@ -14,11 +14,7 @@
 }
 .row_3 {
   padding: 5rem 5rem;
-  background-image: linear-gradient(
-    180deg,
-    #f4f6f3 80%,
-    rgba(0, 0, 0, 0) 4%
-  ) !important;
+  background-color: #f4f6f3;
 }
 .row_4 {
   padding: 5rem 5rem;
@@ -43,11 +39,7 @@
 }
 .row_5 {
   padding: 2rem 0rem;
-  background-image: linear-gradient(
-    180deg,
-    #f4f6f3 80%,
-    rgba(0, 0, 0, 0) 4%
-  ) !important;
+  background-color: #f4f6f3;
 }
 .details_card {
   display: flex;
