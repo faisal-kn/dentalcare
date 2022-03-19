@@ -8,7 +8,7 @@ import { AiFillStar } from "react-icons/ai";
 import triangle_dot from "../assets/img/triangle.svg";
 import cardimg from "../assets/img/cardimg.jpg";
 import row5_img from "../assets/img/row5_img.jpg";
-import { RiPriceTag2Fill } from "react-icons/ri";
+import { RiPriceTag2Fill ,RiDoubleQuotesR} from "react-icons/ri";
 import badge2 from "../assets/img/badge2.svg";
 import footericon1 from "../assets/img/footer_icon1.png";
 import footericon2 from "../assets/img/footer_icon2.png";
@@ -374,7 +374,7 @@ const Home = () => {
         <Row>
           <Col>
             <p>
-              <p className={styles.comma_img}>"</p>
+              <p className={styles.comma_img}> <RiDoubleQuotesR/> </p>
             </p>
             <p className={styles.banner_heading}>
               Kind words from our patients
@@ -388,8 +388,8 @@ const Home = () => {
             </p>
             <p className={styles.underline_text}>850+ 5-star reviews!</p>
           </Col>
-          <Col lg="4" md="12">
-            <Card className={styles.my_card}>
+          <Col lg="4" md="12" className={styles.my_card_cont}>
+            <Card className={styles.my_card} style={{backgroundColor:'#F4F6F3'}}>
               Unlike other Greenwood Village dentists, Village Dental takes you
               where you’re at rather than chastising or shaming. I can’t
               recommend them highly enough. You will be well cared for!
@@ -403,10 +403,10 @@ const Home = () => {
               </p>
             </Card>
           </Col>
-          <Col lg="4" md="12">
+          <Col lg="4" md="12" className={styles.my_card_cont}>
             <Card
               className={styles.my_card}
-              style={{ backgroundColor: "yellow" }}
+              style={{ backgroundColor: "rgba(231,202,113,0.9)" }}
             >
               Unlike other Greenwood Village dentists, Village Dental takes you
               where you’re at rather than chastising or shaming. I can’t
@@ -425,7 +425,7 @@ const Home = () => {
         <Row className="d-flex justify-content-end">
           <Card
             className={styles.my_card + " " + styles.my_card_3}
-            style={{ backgroundColor: "skyblue" }}
+            style={{ backgroundColor: "#9DBEBB" }}
           >
             Unlike other Greenwood Village dentists, Village Dental takes you
             where you’re at rather than chastising or shaming. I can’t recommend
@@ -519,12 +519,24 @@ const Home = () => {
         </Container>
       </div>
       <div className={styles.row_5}>
-        <div
-          className={styles.row_5_img}
-          style={{ backgroundImage: row5_img }}
-        ></div>
-        <Container className={styles.banner_text}></Container>
-      </div>
+					<Container fluid style={{ padding: "30px 0 30px 0" }}>
+				<div className={`${styles.parallax} ${styles.p2}`}>
+				<div className={styles.card}>
+					<h1 style={{ fontSize: "50px", paddingBottom: "20px" }}>
+					How It Works
+					</h1>
+					<ul style={{ fontSize: "18px" }}>
+					<li>Our warranty applies to all restorative dental treatments</li>
+					<li>
+						Visit Village Dental every 6 months for routine cleanings &
+						exams
+					</li>
+					<li>If something breaks, contact us. We’ll fix it.</li>
+					</ul>
+				</div>
+				</div>
+			</Container>
+			</div>
       <Container fluid="md" className={styles.row_6}>
         <Card className={styles.row6_card}>
           <Row style={{ margin: "0px" }}>
@@ -573,37 +585,37 @@ const Home = () => {
         </Card>
       </Container>
       <div className={styles.row_7}>
-        <Container>
+        <Container fluid>
           <Row>
-            <Col className={styles.footer_icons} style={{ width: "50%" }}>
+            <Col className={styles.footer_icons}>
               <img
                 style={{ height: "inherit", width: "inherit" }}
                 src={footericon1}
                 alt=""
               />
             </Col>
-            <Col className={styles.footer_icons} style={{ width: "80%" }}>
+            <Col className={styles.footer_icons}>
               <img
                 style={{ height: "inherit", width: "inherit" }}
                 src={footericon2}
                 alt=""
               />
             </Col>
-            <Col className={styles.footer_icons} style={{ width: "80%" }}>
+            <Col className={styles.footer_icons} >
               <img
                 style={{ height: "inherit", width: "inherit" }}
                 src={footericon3}
                 alt=""
               />
             </Col>
-            <Col className={styles.footer_icons} style={{ width: "70%" }}>
+            <Col className={styles.footer_icons}>
               <img
                 style={{ height: "inherit", width: "inherit" }}
                 src={footericon4}
                 alt=""
               />
             </Col>
-            <Col className={styles.footer_icons} style={{ width: "80%" }}>
+            <Col className={styles.footer_icons}>
               <img
                 style={{ height: "inherit", width: "inherit" }}
                 src={footericon5}

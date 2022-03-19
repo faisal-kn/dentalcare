@@ -6,7 +6,7 @@ import banner_img from '../../../assets/img/bg_1.jpg';
 import tick from '../../../assets/img/tick-svgrepo-com.svg';
 import row_3_img from '../../../assets/img/ser_row2.jpg';
 import row_2 from '../../../assets/img/row_2_img.jpg';
-import {RiPriceTag2Fill} from 'react-icons/ri';
+import {RiPriceTag2Fill,RiDoubleQuotesR} from 'react-icons/ri';
 import badge2 from '../../../assets/img/badge2.svg';
 import {AiFillStar} from 'react-icons/ai';
 import triangle_dot from '../../../assets/img/triangle.svg';
@@ -114,7 +114,7 @@ const Emergency = () => {
 				<Row className='mt-2'>
 					<Col>
 						<p>
-							<p className={home_styles.comma_img}>"</p>
+							<p className={home_styles.comma_img}><RiDoubleQuotesR/></p>
 						</p>
 						<p className={home_styles.banner_heading}>
 						Kind words from our patients
