@@ -80,6 +80,10 @@ nav {
   height: 100%;
   display: flex;
 }
+.nav-list > * > * {
+  text-decoration: none;
+  color: black;
+}
 
 .nav-list li {
   /* height: 100%; */
@@ -111,7 +115,7 @@ nav {
   /* font-size: 1.4rem; */
   /* text-transform: uppercase; */
   transition: color 650ms;
-  white-space:nowrap;
+  white-space: nowrap;
 }
 
 .nav-list a:hover {
@@ -329,4 +333,3 @@ a {
     display: flex;
   }
 }
-

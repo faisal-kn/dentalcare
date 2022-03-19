@@ -1,6 +1,6 @@
 import styles from "./NewNavbar.module.css";
 // import logo from "../assets/logo.webp";
-import logo from "../assets/png.webp";
+// import logo from "../assets/png.webp";
 import { Link } from "react-router-dom";
 import { AiOutlineDown, AiOutlineRight } from "react-icons/ai";
 import { useEffect } from "react";
@@ -57,7 +57,7 @@ const NewNavbar = () => {
             ></i>
           </div>
             <HashLink smooth to="/#" className={styles.logo}>
-              <img src={logo} width={"150px"} />
+              {/* <img src={logo} width={"150px"} /> */}
             </HashLink>
           <ul className={styles["nav-list"]}>
             {/* <li>
@@ -70,24 +70,19 @@ const NewNavbar = () => {
             </li>
             <li>
               <HashLink smooth to="#">
-                Company
+                About
               </HashLink>
               <ul className={styles["sub-menu"]}>
                 <li>
                   <HashLink smooth to="/about-us#">
-                    About Us
-                  </HashLink>
-                </li>
-                <li>
-                  <HashLink smooth to="/about-us#our-values">
-                    Our Values
+                    BEFORE AND AFTERS
                   </HashLink>
                 </li>
               </ul>
             </li>
             <li>
               <HashLink smooth to="#">
-                Salesforce
+                Services
               </HashLink>
               <ul
                 className={
