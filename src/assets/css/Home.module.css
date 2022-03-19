@@ -4,10 +4,11 @@
   visibility: visible;
   overflow-y: hidden;
   position: absolute;
-  top: 5rem;
+  top: 2rem;
   pointer-events: none;
   transition: display 0.3s;
-  aspect-ratio: 1.7 777777777777777;
+  aspect-ratio: calc(16 / 9);
+  min-height: 205px;
 }
 .banner_text {
   padding: 15% 8%;
