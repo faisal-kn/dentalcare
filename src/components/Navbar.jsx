@@ -13,7 +13,7 @@ const MyNavbar = () => {
   return (
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/#">
           VILLAGE DENTAL
         </a>
         <button
@@ -31,7 +31,7 @@ const MyNavbar = () => {
             <li class="nav-item dropdown">
               <a
                 class="nav-link  dropdown-toggle"
-                href="#"
+                href="/aboutus"
                 data-bs-toggle="dropdown"
               >
                 ABOUT
@@ -39,7 +39,7 @@ const MyNavbar = () => {
               <ul class="dropdown-menu dropdown-menu-right">
                 <li>
                   <a class="dropdown-item" href="#">
-                    BEFORE AND AFTERS
+                    BEFORE AND AFTER
                   </a>
                 </li>
               </ul>
@@ -47,7 +47,7 @@ const MyNavbar = () => {
             <li class="nav-item dropdown">
               <a
                 class="nav-link  dropdown-toggle"
-                href="#"
+                href="/services"
                 data-bs-toggle="dropdown"
               >
                 SERVICES
@@ -60,22 +60,22 @@ const MyNavbar = () => {
                   </a>
                   <ul class="submenu submenu-left dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="">
+                      <a class="dropdown-item" href="/services/botox">
                         BOTOX
                       </a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="">
+                      <a class="dropdown-item" href="/services/cleanings">
                         CLEANINGS & EXAMS
                       </a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="">
+                      <a class="dropdown-item" href="/services/emergency">
                         EMERGENCY CARE
                       </a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="">
+                      <a class="dropdown-item" href="/services/crowns">
                         CROWNS
                       </a>
                     </li>
@@ -87,27 +87,27 @@ const MyNavbar = () => {
                   </a>
                   <ul class="submenu submenu-left dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="">
+                      <a class="dropdown-item" href="/services/invisalign">
                         INVISALIGN
                       </a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="">
+                      <a class="dropdown-item" href="/services/botox">
                         BOTOX
                       </a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="">
+                      <a class="dropdown-item" href="/services/teeth-whitening">
                         TEETH WHITENING
                       </a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="">
+                      <a class="dropdown-item" href="/services/bonding">
                         BONDING
                       </a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="">
+                      <a class="dropdown-item" href="/services/veneers">
                         VENEERS
                       </a>
                     </li>
@@ -119,7 +119,7 @@ const MyNavbar = () => {
                   </a>
                   <ul class="submenu submenu-left dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="">
+                      <a class="dropdown-item" href="/services/implants">
                         IMPLANTS
                       </a>
                     </li>
@@ -128,12 +128,12 @@ const MyNavbar = () => {
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="/warranty">
                 WARRANTY
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="/new-patients">
                 NEW PATIENTS
               </a>
             </li>
