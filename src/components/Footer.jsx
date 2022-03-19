@@ -12,46 +12,25 @@ const Footer = () => {
             <Row>
               <Col className="mb-3" md={3}>
                 <div className={`${styles["footer-title"]} mt-5 mb-4 pb-2`}>
-                  About us
+                  Social
                 </div>
-                <p className={`${styles["white-text"]}`}>
-                  FIYN LABS is a salesforce consulting firm that provides
-                  high-quality services and solutions to customers. Our mission
-                  is to help our clients improve and grow their business. FIYN
-                  LABS provides customers with competent Salesforce CRM
-                  solutions from start to finish of their business operations.
-                </p>
-              </Col>
-              <Col className="mb-3" md={3}>
-                <div className={`${styles["footer-title"]} mt-5 mb-4 pb-2`}>
-                  Company
-                </div>
-                <div className={`${styles["footer-links"]}`}>
-                  <a smooth to="/about-us#">
-                    About Us
-                  </a>
-                  <a smooth to="our-values#">
-                    Our Values
-                  </a>
-                  <a smooth to="customer-success#">
-                    Customer Success
-                  </a>
-                </div>
-              </Col>
-              <Col className="mb-3" md={3}>
-                <div className={`${styles["footer-title"]} mt-5 mb-4 pb-2`}>
-                  Quick Links
-                </div>
-                <div className={`${styles["footer-links"]}`}>
-                  <a smooth to="/">
-                    Home
-                  </a>
-                  <a smooth to="/contact-us#">
-                    Contact Us
-                  </a>
-                  <a smooth to="/careers#">
-                    Work with us
-                  </a>
+                <div
+                  className={`${styles["footer-social-links"]} mt-3`}
+                >
+                  <li>
+                    <a href="#">
+                      <FaFacebook />
+                    </a>
+                    <a href="https://twitter.com/FiynLabs">
+                      <FaTwitter />
+                    </a>
+                    <a href="https://www.linkedin.com/company/fiyn-labs">
+                      <FaLinkedin />
+                    </a>
+                    <a href="#">
+                      <FaWhatsapp />
+                    </a>
+                  </li>
                 </div>
               </Col>
               <Col className="mb-3" md={3}>
@@ -59,47 +38,50 @@ const Footer = () => {
                   Services
                 </div>
                 <div className={`${styles["footer-links"]}`}>
-                  <a smooth to="/services/salesforce-cloud-implementation#">
-                    Salesforce Cloud Implementation
+                  <a smooth to="/about-us#">
+                    General
                   </a>
-                  <a smooth to="/services/salesforce-services#">
-                    Salesforce Services
+                  <a smooth to="our-values#">
+                    Cosmetic
                   </a>
-                  <a smooth to="/services/other-crm-services#">
-                    Other CRM Services
-                  </a>
-                  <a smooth to="/services/salesforce-integration-services#">
-                    Salesforce Integrations Services
-                  </a>
-                  <a smooth to="/services/product-integration#">
-                    Products Integration
+                  <a smooth to="customer-success#">
+                    Surgical
                   </a>
                 </div>
               </Col>
-
-              <div
-                className={`${styles["footer-social-links"]} mt-3 text-center`}
-              >
-                <li>
-                  <a href="#">
-                    <FaFacebook />
+              <Col className="mb-3" md={3}>
+                <div className={`${styles["footer-title"]} mt-5 mb-4 pb-2`}>
+                  Our Office
+                </div>
+                <div className={`${styles["footer-links"]}`}>
+                  <a smooth to="/">
+                    Home
                   </a>
-                  <a href="https://twitter.com/FiynLabs">
-                    <FaTwitter />
+                  <a smooth to="/contact-us#">
+                    Warranty
                   </a>
-                  <a href="https://www.linkedin.com/company/fiyn-labs">
-                    <FaLinkedin />
+                  <a smooth to="/careers#">
+                    About
                   </a>
-                  <a href="#">
-                    <FaWhatsapp />
+                  <a smooth to="/careers#">
+                    New Patients
                   </a>
-                </li>
-              </div>
+                  <a smooth to="/careers#">
+                    Contact
+                  </a>
+                </div>
+              </Col>
+              <Col className="mb-3" md={3}>
+                <div className={`${styles["footer-title"]} mt-5 mb-4 pb-2`}>
+                  Contact Us
+                </div>
+                
+              </Col>
             </Row>
           </Container>
         </footer>
         <div className={`${styles["footer-bottom"]}`}>
-          Fiyn Labs © 2022, All Rights Reserved
+          VillageDental © 2022, All Rights Reserved
         </div>
       </Row>
     </Container>

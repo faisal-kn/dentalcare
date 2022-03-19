@@ -1,9 +1,9 @@
 import about from "../assets/about.jpg";
-import styles from "./warrenty.module.css";
+import styles from "./warranty.module.css";
 import { Container, Col, Row } from "react-bootstrap";
 import { useState, useEffect } from "react";
 
-const Warrenty = () => {
+const Warranty = () => {
   const [width, setWidth] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -37,24 +37,43 @@ const Warrenty = () => {
       </div>
       <Container>
         <Row className={styles.firstContainer}>
-          <Col lg={5}>
-            {width > 1400 && (
+          {width > 1400 && (
+            <Col
+              lg={5}
+              md={12}
+              className="d-flex align-items-center justify-content-center "
+            >
               <img
                 alt=""
                 className={styles.imgContainer}
                 src="https://www.villagedentaldtc.com/wp-content/uploads/2021/09/shine-bright-today-village-dental.jpg"
               />
-            )}
-          </Col>
+            </Col>
+          )}
 
-          <Col lg={7} style={{ paddingTop: "30px" }}>
-            <h1 style={{ paddingBottom: "10px" }}>We stand behind our work</h1>
+          <Col
+            lg={7}
+            md={12}
+            style={{ paddingTop: "30px" }}
+            className="d-flex justify-content-center flex-column"
+          >
+            <h1 style={{ paddingBottom: "10px" }} className="text-center">
+              We stand behind our work
+            </h1>
             <p>
               We’re the only dentist in Denver Tech Center to offer a lifetime
               warranty. We believe in the quality of our work and want to pass
               that confidence to you. If something breaks, we’ll fix it at no
               cost to you. Because it’s the right thing to do.
             </p>
+            <iframe
+              src="https://www.youtube.com/embed/PWZnenTQDB4"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              className={styles.videoContainer}
+            ></iframe>
           </Col>
         </Row>
       </Container>
@@ -89,7 +108,7 @@ const Warrenty = () => {
               alt=""
               title="bridge-icon-village-dental"
               class="wp-image-31328"
-            ></img>
+            />
             <h3>Crowns and Bridges</h3>
             <p>
               <strong>Warranty period:</strong> 5 years
@@ -142,7 +161,7 @@ const Warrenty = () => {
           </div>
         </div>
       </Container>
-      <Container style={{ padding: "40px 0 40px 0" }}>
+      <Container style={{ padding: "40px" }}>
         <Row>
           <Col
             lg={6}
@@ -184,4 +203,4 @@ const Warrenty = () => {
   );
 };
 
-export default Warrenty;
+export default Warranty;

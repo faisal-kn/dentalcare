@@ -6,7 +6,7 @@ import { BiTimeFive } from "react-icons/bi";
 import doctor from "../assets/doctor.jpg";
 import about from "../assets/about.jpg";
 
-const dummyData = [" empathy", " integrity", " gratitude", " connection"];
+const dummyData = [" empathy", " integrity", " gratitude"];
 const AboutUs = () => {
   const [currentText, setCurrentText] = useState(dummyData[0]);
 
@@ -19,7 +19,7 @@ const AboutUs = () => {
           return dummyData[dummyData.indexOf(prevState) + 1];
         }
       });
-    }, 10000);
+    }, 5000);
   }, []);
 
   useEffect(() => {}, [currentText]);
@@ -35,39 +35,27 @@ const AboutUs = () => {
           effect="blur"
           src={about}
           style={{
-            maxHeight: "90vh",
+            height: "95vh",
             minWidth: "100vw",
             objectFit: "cover",
             opacity: "0.7",
-            backgroundFit: "cover",
-            width: "inherit",
           }}
           alt=""
         />
         <div className={styles.landingTitle}>
-          <span style={{ fontSize: "20px", paddingBottom: "10px" }}>
-            ABOUT VILLAGE DENTAL
-          </span>
-          <span
-            style={{
-              
-            }}
-            className={styles.headingTitle}
-          >
-            Building lifetime relationships through
-            <br /> positive experiences
-          </span>
-          <h5>OR CALL (303) 220-7662</h5>
+          ABOUT VILLAGE DENTAL
+          <h2>Building lifetime relationships through positive experiences</h2>
+          <p>OR CALL (303) 220-7662</p>
         </div>
       </div>
       <Container className={styles.firstContainer}>
         <Row>
-          <Col lg={7}>
+          <Col lg={7} className={styles.mainContainer}>
             <h1 style={{ paddingBottom: "30px" }}>
               Serving Patients with
               <span style={{ color: "#316A80" }}>{currentText}</span>
             </h1>
-            <p style={{ paddingRight: "20px" }}>
+            <p style={{ paddingRight: "20px", textAlign: "justify" }}>
               We’re a group of energetic, values-driven dental clinicians
               dedicated to caring for all people — young to young at heart.
               Since 2002, we’ve been combining exciting technology with a warm
@@ -77,14 +65,31 @@ const AboutUs = () => {
               <br /> Find all the dental care you need (and then some) here in
               our beautiful office, designed for your comfort and rejuvenation.
             </p>
+            <iframe
+              src="https://www.youtube.com/embed/PWZnenTQDB4"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              className={styles.videoContainer}
+            ></iframe>
           </Col>
-          <Col lg={5} className={styles.container}>
+          <Col
+            lg={5}
+            className={`${styles.container} d-flex justify-content-center align-items-center flex-column`}
+          >
             <img
               className={styles.imagezero}
               src="https://www.villagedentaldtc.com/wp-content/uploads/2021/08/dr-brenna-and-steve-village-dental-1024x731.jpg"
               alt="Dentists smiling at village dental"
             ></img>
-            <p style={{ color: "white" }}>
+            <p
+              style={{
+                color: "white",
+                textAlign: "justify",
+                marginTop: "20px",
+              }}
+            >
               At Village Dental, you are in good hands. With every treatment, we
               promise to do it right, quickly, and for a fair price. And we
               provide a lifetime warranty on all our work — because it’s the
@@ -103,17 +108,18 @@ const AboutUs = () => {
           </Col>
           <Col>
             <hr />
-            <Row>
+            <Row style={{ paddingTop: "30px" }}>
               <Col lg={6}>
                 <img
                   src="https://www.villagedentaldtc.com/wp-content/uploads/2021/09/dark-blue-triangle-dots-village-dental.svg"
                   alt=""
                   className={styles.imgTriangle}
+                  // style={{ paddingBottom: "30px" }}
                 ></img>
 
-                <h2>Dr. Steven Zervas</h2>
-                <h6>Why dentistry?</h6>
-                <p>
+                <h2 style={{ padding: "20px 0 20px 0" }}>Dr. Steven Zervas</h2>
+                <h6 style={{ padding: "0px 0 10px 0" }}>Why dentistry?</h6>
+                <p style={{ textAlign: "justify" }}>
                   I’m a dentist because it has always been my desire to help
                   people in a healthcare environment. Growing up in my dad’s and
                   uncle’s dental office, I learned early on that dentistry was
@@ -123,14 +129,16 @@ const AboutUs = () => {
                 </p>
               </Col>
               <Col>
-                <h6>Education</h6>
+                <h6 style={{ padding: "0px 0 10px 0" }}>Education</h6>
                 <ol>
                   <li>
                     BA in Biology and World Religions, Westminster College
                   </li>
                   <li>DDS, University of Oklahoma</li>
                 </ol>
-                <h6>Out and about in Denver/Greenwood Village</h6>
+                <h6 style={{ padding: "0px 0 10px 0" }}>
+                  Out and about in Denver/Greenwood Village
+                </h6>
                 <ol>
                   <li>Running in Wash Park</li>
                   <li>Concerts at the Mission Ballroom and Red Rocks</li>
@@ -150,17 +158,18 @@ const AboutUs = () => {
           </Col>
           <Col>
             <hr />
-            <Row>
+            <Row style={{ paddingTop: "30px" }}>
               <Col lg={6}>
                 <img
                   src="https://www.villagedentaldtc.com/wp-content/uploads/2021/09/dark-blue-triangle-dots-village-dental.svg"
                   alt=""
                   className={styles.imgTriangle}
+                  // style={{ paddingBottom: "30px" }}
                 ></img>
 
-                <h2>Dr. Steven Zervas</h2>
-                <h6>Why dentistry?</h6>
-                <p>
+                <h2 style={{ padding: "20px 0 20px 0" }}>Dr. Steven Zervas</h2>
+                <h6 style={{ padding: "0px 0 10px 0" }}>Why dentistry?</h6>
+                <p style={{ textAlign: "justify" }}>
                   I’m a dentist because it has always been my desire to help
                   people in a healthcare environment. Growing up in my dad’s and
                   uncle’s dental office, I learned early on that dentistry was
@@ -170,14 +179,16 @@ const AboutUs = () => {
                 </p>
               </Col>
               <Col>
-                <h6>Education</h6>
+                <h6 style={{ padding: "0px 0 10px 0" }}>Education</h6>
                 <ol>
                   <li>
                     BA in Biology and World Religions, Westminster College
                   </li>
                   <li>DDS, University of Oklahoma</li>
                 </ol>
-                <h6>Out and about in Denver/Greenwood Village</h6>
+                <h6 style={{ padding: "0px 0 10px 0" }}>
+                  Out and about in Denver/Greenwood Village
+                </h6>
                 <ol>
                   <li>Running in Wash Park</li>
                   <li>Concerts at the Mission Ballroom and Red Rocks</li>
@@ -197,17 +208,18 @@ const AboutUs = () => {
           </Col>
           <Col>
             <hr />
-            <Row>
+            <Row style={{ paddingTop: "30px" }}>
               <Col lg={6}>
                 <img
                   src="https://www.villagedentaldtc.com/wp-content/uploads/2021/09/dark-blue-triangle-dots-village-dental.svg"
                   alt=""
                   className={styles.imgTriangle}
+                  // style={{ paddingBottom: "30px" }}
                 ></img>
 
-                <h2>Dr. Steven Zervas</h2>
-                <h6>Why dentistry?</h6>
-                <p>
+                <h2 style={{ padding: "20px 0 20px 0" }}>Dr. Steven Zervas</h2>
+                <h6 style={{ padding: "0px 0 10px 0" }}>Why dentistry?</h6>
+                <p style={{ textAlign: "justify" }}>
                   I’m a dentist because it has always been my desire to help
                   people in a healthcare environment. Growing up in my dad’s and
                   uncle’s dental office, I learned early on that dentistry was
@@ -217,14 +229,16 @@ const AboutUs = () => {
                 </p>
               </Col>
               <Col>
-                <h6>Education</h6>
+                <h6 style={{ padding: "0px 0 10px 0" }}>Education</h6>
                 <ol>
                   <li>
                     BA in Biology and World Religions, Westminster College
                   </li>
                   <li>DDS, University of Oklahoma</li>
                 </ol>
-                <h6>Out and about in Denver/Greenwood Village</h6>
+                <h6 style={{ padding: "0px 0 10px 0" }}>
+                  Out and about in Denver/Greenwood Village
+                </h6>
                 <ol>
                   <li>Running in Wash Park</li>
                   <li>Concerts at the Mission Ballroom and Red Rocks</li>
