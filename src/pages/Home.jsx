@@ -40,7 +40,7 @@ const Home = () => {
 								<p>Adults and kids, we welcome patients of all ages! Our team is passionate about building lifetime relationships through positive experiences, featuring:</p>
 							</Row>
 							<Row>
-								<ul style={{listStyleImage:tick}}>
+								<ul style={{listStyleImage:`url(${tick})`}}>
 									<li>Transparent Pricing</li>
 									<li>Unparalleled Warranty</li>
 									<li>FREE Whitening (for life!)</li>
@@ -155,7 +155,7 @@ Surgical
 					<h1 style={{ fontSize: "50px", paddingBottom: "20px" }}>
 					How It Works
 					</h1>
-					<ul style={{ fontSize: "18px" }}>
+					<ul style={{ fontSize: "18px" ,listStyleImage:`url(${tick})`}}>
 					<li>Our warranty applies to all restorative dental treatments</li>
 					<li>
 						Visit Village Dental every 6 months for routine cleanings &

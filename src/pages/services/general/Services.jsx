@@ -1,18 +1,18 @@
 import React from 'react';
 import {Accordion,Container, Row, Col, Card ,Button,useAccordionButton} from 'react-bootstrap';
-import home_styles from '../assets/css/Home.module.css';
-import service_styles from '../assets/css/Services.module.css';
-import banner_img from '../assets/img/bg_1.jpg';
-import row_2_img from '../assets/img/cardimg.jpg';
-import row_3_img from '../assets/img/ser_row2.jpg';
+import home_styles from '../../../assets/css/Home.module.css';
+import service_styles from '../../../assets/css/Services.module.css';
+import row_2_img from '../../../assets/img/cardimg.jpg';
+import row_3_img from '../../../assets/img/ser_row2.jpg';
 import {AiFillPlusCircle,AiFillStar} from 'react-icons/ai';
-import servicetag from '../assets/img/service_tag.svg';
-import triangle_dot from '../assets/img/triangle.svg';
-import badge from '../assets/img/badge.svg';
-import grad from '../assets/img/gradient.jpg';
+import servicetag from '../../../assets/img/service_tag.svg';
+import triangle_dot from '../../../assets/img/triangle.svg';
+import triangle_dot_white from '../../../assets/img/triangle_white.svg';
+import badge from '../../../assets/img/badge.svg';
+import grad from '../../../assets/img/gradient.jpg';
+import Banner from '../../../components/Banner';
 
 const Services = () => {
-	console.log(grad);
 	function CustomToggle({ children, eventKey }) {
 		const decoratedOnClick = useAccordionButton(eventKey, () =>
 		  console.log('totally custom!'),
@@ -21,7 +21,7 @@ const Services = () => {
 		return (
 		  <button
 			type="button"
-			style={{ border:'0px' }}
+			style={{ border:'0px',backgroundColor:'white' }}
 			onClick={decoratedOnClick}
 		  >
 			{children}
@@ -30,13 +30,7 @@ const Services = () => {
 	  }
 	return (
 		<div>
-			<img className={home_styles.banner_video} src={banner_img} alt="" />
-			<Container fluid className={home_styles.banner_text}>
-				<div className={home_styles.banner_inner_text}>GENERAL DENTAL CARE IN DENVER TECH CENTER, CO
-				</div>
-				<div className={home_styles.banner_heading}>
-					Everything you expect and <br /> then some</div>
-			</Container>
+			<Banner/>
 			<div className={service_styles.row_2}>
 				<div className={service_styles.row_2_cards}>
 					<Row>
@@ -86,7 +80,7 @@ const Services = () => {
 								<CustomToggle eventKey="0"><AiFillPlusCircle size={20} className={service_styles.accordionplus}/></CustomToggle>
 							</Card.Header>
 							<Accordion.Collapse eventKey="0">
-								<Card.Body style={{backgroundColor:'#d5f5d5'}}>With early detection technology, advanced imaging, and safe filling materials, addressing tooth decay is easier than ever.</Card.Body>
+								<Card.Body style={{backgroundColor:'rgba(157,190,187,0.5)'}}>With early detection technology, advanced imaging, and safe filling materials, addressing tooth decay is easier than ever.</Card.Body>
 							</Accordion.Collapse>
 						</Card>
 						<Card className={service_styles.accord_cards}>
@@ -95,7 +89,7 @@ const Services = () => {
 								<CustomToggle eventKey="1"><AiFillPlusCircle size={20} className={service_styles.accordionplus}/></CustomToggle>
 							</Card.Header>
 							<Accordion.Collapse eventKey="1">
-								<Card.Body style={{backgroundColor:'#d5f5d5'}}>With early detection technology, advanced imaging, and safe filling materials, addressing tooth decay is easier than ever.</Card.Body>
+								<Card.Body style={{backgroundColor:'rgba(157,190,187,0.5)'}}>With early detection technology, advanced imaging, and safe filling materials, addressing tooth decay is easier than ever.</Card.Body>
 							</Accordion.Collapse>
 						</Card>
 						<Card className={service_styles.accord_cards}>
@@ -104,7 +98,7 @@ const Services = () => {
 								<CustomToggle eventKey="2"><AiFillPlusCircle size={20} className={service_styles.accordionplus}/></CustomToggle>
 							</Card.Header>
 							<Accordion.Collapse eventKey="2">
-								<Card.Body style={{backgroundColor:'#d5f5d5'}}>With early detection technology, advanced imaging, and safe filling materials, addressing tooth decay is easier than ever.</Card.Body>
+								<Card.Body style={{backgroundColor:'rgba(157,190,187,0.5)'}}>With early detection technology, advanced imaging, and safe filling materials, addressing tooth decay is easier than ever.</Card.Body>
 							</Accordion.Collapse>
 						</Card>
 						<Card className={service_styles.accord_cards}>
@@ -113,7 +107,7 @@ const Services = () => {
 								<CustomToggle eventKey="3"><AiFillPlusCircle size={20} className={service_styles.accordionplus}/></CustomToggle>
 							</Card.Header>
 							<Accordion.Collapse eventKey="3">
-								<Card.Body style={{backgroundColor:'#d5f5d5'}}>With early detection technology, advanced imaging, and safe filling materials, addressing tooth decay is easier than ever.</Card.Body>
+								<Card.Body style={{backgroundColor:'rgba(157,190,187,0.5)'}}>With early detection technology, advanced imaging, and safe filling materials, addressing tooth decay is easier than ever.</Card.Body>
 							</Accordion.Collapse>
 						</Card>
 						<Card className={service_styles.accord_cards}>
@@ -122,7 +116,7 @@ const Services = () => {
 								<CustomToggle eventKey="4"><AiFillPlusCircle size={20} className={service_styles.accordionplus}/></CustomToggle>
 							</Card.Header>
 							<Accordion.Collapse eventKey="4">
-								<Card.Body style={{backgroundColor:'#d5f5d5'}}>With early detection technology, advanced imaging, and safe filling materials, addressing tooth decay is easier than ever.</Card.Body>
+								<Card.Body style={{backgroundColor:'rgba(157,190,187,0.5)'}}>With early detection technology, advanced imaging, and safe filling materials, addressing tooth decay is easier than ever.</Card.Body>
 							</Accordion.Collapse>
 						</Card>
 						<Card className={service_styles.accord_cards}>
@@ -131,7 +125,7 @@ const Services = () => {
 								<CustomToggle eventKey="5"><AiFillPlusCircle size={20} className={service_styles.accordionplus}/></CustomToggle>
 							</Card.Header>
 							<Accordion.Collapse eventKey="5">
-								<Card.Body style={{backgroundColor:'#d5f5d5'}}>With early detection technology, advanced imaging, and safe filling materials, addressing tooth decay is easier than ever.</Card.Body>
+								<Card.Body style={{backgroundColor:'rgba(157,190,187,0.5)'}}>With early detection technology, advanced imaging, and safe filling materials, addressing tooth decay is easier than ever.</Card.Body>
 							</Accordion.Collapse>
 						</Card>
 					</Accordion>
@@ -208,7 +202,7 @@ const Services = () => {
 					</Card>
 					</Col>
 					<Col lg='4' md='12'>
-					<Card className={home_styles.my_card} style={{backgroundColor:'yellow'}}>
+					<Card className={home_styles.my_card} style={{backgroundColor:'#9DBEBB'}}>
 					Unlike other Greenwood Village dentists, Village Dental takes you where you’re at rather than chastising or shaming. I can’t recommend them highly enough. You will be well cared for!
 					<p className={home_styles.card_author}>— Sherryll K.</p>
 					<p className={home_styles.card_triangle_dot}><img style={{transform:'rotate(270deg)'}} src={triangle_dot} alt="" /></p>
@@ -216,10 +210,10 @@ const Services = () => {
 					</Col>
 				</Row>
 				<Row className='d-flex justify-content-end' >	
-				<Card className={home_styles.my_card+' '+home_styles.my_card_3} style={{backgroundColor:'skyblue'}}>
+				<Card className={home_styles.my_card+' '+home_styles.my_card_3} style={{backgroundColor:'#052639',color:'white'}}>
 					Unlike other Greenwood Village dentists, Village Dental takes you where you’re at rather than chastising or shaming. I can’t recommend them highly enough. You will be well cared for!
 					<p className={home_styles.card_author}>— Sherryll K.</p>
-					<p className={home_styles.card_triangle_dot}><img style={{transform:'rotate(270deg)'}} src={triangle_dot} alt="" /></p>
+					<p className={home_styles.card_triangle_dot}><img style={{transform:'rotate(270deg)',color:'white'}} src={triangle_dot_white} alt="" /></p>
 					</Card>
 				</Row>
 			</div>
@@ -255,6 +249,28 @@ const Services = () => {
 							</Col>
 					</Row>
 					</Container>
+			</div>
+			<div className={service_styles.row_4}>
+				<Container>
+					<Row>
+						<Col lg='6' sm='12' >
+							<h4>INSURANCE</h4>
+							<h1>We’ve got you covered</h1>
+							<p>
+							Our office is in-network with Delta Premier and bills all other providers. We’ll explain how your specific dental benefits apply to the cost of general dental care.
+							</p>
+							<p>No insurance? Cash, check, and credit card payments are always accepted.</p>
+							</Col>
+							<Col lg='6' sm='12' >
+								<Row className='justify-content-center'>
+								<img style={{width:'inherit',height:'350px'}} src={badge} alt="" />
+								</Row>
+								<Row className='text-center'>
+								<p>“Pop Teeth to Top Teeth”</p>
+								</Row>
+								</Col>
+					</Row>
+				</Container>
 			</div>
 		</div>
 	)
