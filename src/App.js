@@ -16,7 +16,7 @@ import Veneers from "./pages/services/cosmetic/Veneers";
 import Cosmetic from "./pages/services/cosmetic/Cosmetic";
 import Surgical from "./pages/services/surgery/Surgical";
 import Implants from "./pages/services/surgery/Implants";
-
+import NewPatients from './pages/NewPatients';
 function App() {
   return (
     <div className="App">
@@ -30,14 +30,15 @@ function App() {
         <Route path="/services/emergency" element={ <Emergency/>  }/>
         <Route path='services/crowns' element={<Crowns/>}/>
         <Route path='/services/cosmetic' element={<Cosmetic/>}/>
-        <Route path='services/invisalign' element={<Invisalign/> }/>
+        <Route path='/services/invisalign' element={<Invisalign/> }/>
         <Route path="/services/teeth-whitening" element={<TeethWhitening/>}/>
         <Route path='/services/bonding' element={<Bonding/>}/>
-        <Route path='services/veneers' element={<Veneers/>}/>
-        <Route path='services/surgical' element={<Surgical/>}/>
-        <Route path='services/implants' element={<Implants/>}/>
-        <Route path="/aboutUs" element={<AboutUs />} /> 
-        <Route path="/warrenty" element={<Warrenty />} />
+        <Route path='/services/veneers' element={<Veneers/>}/>
+        <Route path='/services/surgical' element={<Surgical/>}/>
+        <Route path='/services/implants' element={<Implants/>}/>
+        <Route path="/aboutus" element={<AboutUs />} /> 
+        <Route path="/warranty" element={<Warrenty />} />
+        <Route path="/new-patients" element={<NewPatients />} />
       </Routes>
       <Footer />
     </div>

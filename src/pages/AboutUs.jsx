@@ -1,10 +1,10 @@
 import styles from "./about.module.css";
+import about from "../assets/about.jpg";
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { HiLocationMarker } from "react-icons/hi";
 import { BiTimeFive } from "react-icons/bi";
 import doctor from "../assets/doctor.jpg";
-import about from "../assets/about.jpg";
 
 const dummyData = [" empathy", " integrity", " gratitude"];
 const AboutUs = () => {
