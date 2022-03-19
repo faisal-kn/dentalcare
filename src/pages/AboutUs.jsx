@@ -255,7 +255,7 @@ const AboutUs = () => {
             </Row>
           </Col>
         </Row>
-        <VisitUs/>
+        {/* <VisitUs/> */}
         {/* <Row>
           <Col></Col>
           <Col>
