@@ -25,11 +25,90 @@
   padding-top: 5px;
   font-size: 3.5em;
 }
+
+@keyframes rightToLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  25% {
+    opacity: 0.7;
+    transform: translateX(0);
+  }
+  50% {
+    opacity: 0.9;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes leftToRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  25% {
+    opacity: 0.7;
+    transform: translateX(0);
+  }
+  50% {
+    opacity: 0.9;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes bottomToTop {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  25% {
+    opacity: 0.7;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 0.9;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes topToBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  25% {
+    opacity: 0.7;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 0.9;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .row_2 {
   background-image: url("../img/blue-grain-bg.jpg");
   display: flex;
+
   align-items: center;
 }
+
 .my_cards {
   margin: 6% 5%;
   padding: 10% 5%;
@@ -37,6 +116,22 @@
   color: white;
   background-color: transparent;
   border-radius: 0px 40px 0px 40px;
+}
+
+.aniLeftToRight {
+  animation: leftToRight 3s ease-in-out;
+}
+
+.aniRightToLeft {
+  animation: rightToLeft 3s ease-in-out;
+}
+
+.aniBottomToTop {
+  animation: bottomToTop 3s ease-in-out;
+}
+
+.aniTopToBottom {
+  animation: topToBottom 3s ease-in-out;
 }
 
 .row_image {
