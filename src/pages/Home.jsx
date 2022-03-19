@@ -15,33 +15,10 @@ import footericon2 from '../assets/img/footer_icon2.png';
 import footericon3 from '../assets/img/footer_icon3.png';
 import footericon4 from '../assets/img/footer_icon4.png';
 import footericon5 from '../assets/img/footer_icon5.png';
-import ImageHolder from '../components/ImageHolder';
+
 
 const Home = () => {
-	const imageUrl = [{
-		"img1": "https://www.villagedentaldtc.com/wp-content/uploads/2021/12/crowns-bonding-before-village-dental.jpeg", "img2": "https://www.villagedentaldtc.com/wp-content/uploads/2021/12/crowns-bonding-after-village-dental.jpeg", "title": `Crowns &
-	Bonding`},
-	{
-		"img1": "https://www.villagedentaldtc.com/wp-content/uploads/2021/12/implants-invisalign-before-village-dental.jpeg.jpeg", "img2": "https://www.villagedentaldtc.com/wp-content/uploads/2021/12/implants-invisalign-after-village-dental.jpeg", "title": `Dental Implants &
-	Invisalign`},
-	{
-		"img1": "https://www.villagedentaldtc.com/wp-content/uploads/2021/12/crown-lengthening-before-village-dental.jpeg", "img2": "https://www.villagedentaldtc.com/wp-content/uploads/2021/12/crown-lengthening-after-village-dental.jpeg", "title": `Crown
-	Lengthening`},
-	{
-		"img1": "https://www.villagedentaldtc.com/wp-content/uploads/2021/12/teeth-in-a-day-before-village-dental.jpeg", "img2": "https://www.villagedentaldtc.com/wp-content/uploads/2021/12/teeth-in-a-day-after-village-dental.jpeg", "title": `Teeth in a Day
-	(replacing a bridge with implants)
-	`},
-	{
-		"img1": "https://www.villagedentaldtc.com/wp-content/uploads/2021/12/implants-front-before-village-dental.jpeg", "img2": "https://www.villagedentaldtc.com/wp-content/uploads/2021/12/implants-front-after-village-dental.jpeg", "title": `Dental Implants
-	(replacing front teeth)
-	`},
-	{
-		"img1": "https://www.villagedentaldtc.com/wp-content/uploads/2021/12/full-mouth-rehab-before-village-dental.jpeg", "img2": "https://www.villagedentaldtc.com/wp-content/uploads/2021/12/full-mouth-rehab-after-village-dental.jpeg", "title": `Full Mouth
-	Rehabilitation`},
-	{
-		"img1": "https://www.villagedentaldtc.com/wp-content/uploads/2021/12/implant-and-crown-lengthening-before-village-dental.jpeg", "img2": "https://www.villagedentaldtc.com/wp-content/uploads/2021/12/implant-and-crown-lengthening-after-village-dental.jpeg", "title": `Dental Implant &
-	Crown Lengthening`},
-	];
+	
 	return (
 		<div>
 			<video className={styles.banner_video} loop autoPlay playsInline muted id="mejs_45125869032737276_html5" preload="none" src={banner_video}>
@@ -80,17 +57,6 @@ const Home = () => {
 						</Col>
 					</Row>
 				</div>
-			</div>
-			<div style={{ margin: "25px 0" }}>
-				<h1 className={styles.imagehead}>Before/After</h1>
-				<div className={styles.imagegrid}>
-					{
-						imageUrl.map(({ title, img1, img2 }) => {
-							return <ImageHolder title={title} img1={img1} img2={img2} />
-						})
-					}
-				</div>
-
 			</div>
 
 

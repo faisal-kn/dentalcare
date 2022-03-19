@@ -17,6 +17,7 @@ import Veneers from "./pages/services/cosmetic/Veneers";
 import Cosmetic from "./pages/services/cosmetic/Cosmetic";
 import Surgical from "./pages/services/surgery/Surgical";
 import Implants from "./pages/services/surgery/Implants";
+import BeforeAfter from "./pages/BeforeAfter";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
         <Route path='services/implants' element={<Implants/>}/>
         <Route path="/aboutUs" element={<AboutUs />} /> 
         <Route path="/warrenty" element={<Warrenty />} />
+        <Route path="/beforeafter" element={<BeforeAfter />} />
       </Routes>
       <Footer />
     </div>
