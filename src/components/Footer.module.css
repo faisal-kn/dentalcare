@@ -2,7 +2,7 @@
   padding: 40px 0;
   padding-top: 25px;
   width: 100%;
-  background: #266980;
+  background: #05081a;
   color: #fff;
 }
 
@@ -22,7 +22,7 @@
   bottom: 0;
   width: 30px;
   height: 4px;
-  background: grey;
+  background: #286a82;
 }
 .footer-links a {
   padding: 10px 0;
@@ -33,7 +33,7 @@
   text-decoration: none;
 }
 .footer-links a:hover {
-  color: #f8ac70;
+  color: #286a82;
 }
 .footer-social-links li {
   display: inline-block;
@@ -45,7 +45,6 @@
   float: left;
   margin-right: 10px;
   padding: 10px;
-  border: 1px solid #404040;
   border-radius: 50px;
   text-align: center;
   color: #fff;
@@ -53,7 +52,7 @@
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
   transition: background 0.3s ease-in-out;
-  background: rgb(143, 141, 141);
+  background: #286a82;
 }
 .footer-social-links a:hover {
   background: black;
@@ -64,5 +63,5 @@
   padding: 0px 0 25px 0;
   text-align: center;
   color: #fff;
-  background: #266980;
+  background: #05081a;
 }
