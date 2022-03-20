@@ -305,6 +305,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
 .imagehead {
   text-align: center;
   font-family: "Times New Roman", Times, serif;

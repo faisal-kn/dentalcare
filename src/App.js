@@ -1,11 +1,12 @@
 import MyNavbar from "./components/Navbar";
+import NewNavbar from "./components/NewNavbar";
 import Footer from "./components/Footer";
 import AboutUs from "./pages/AboutUs";
 import Home from "./pages/Home";
 import Services from "./pages/services/Services";
 import Warranty from "./pages/Warranty";
 import { Routes, Route } from "react-router-dom";
-
+import NewPatients from './pages/NewPatients';
 import Botox from "./pages/services/general/Botox";
 import Cleanings from "./pages/services/general/Cleanings";
 import Emergency from "./pages/services/general/Emergency";
@@ -22,8 +23,8 @@ import BeforeAfter from "./pages/BeforeAfter";
 function App() {
   return (
     <div className="App">
-      <MyNavbar />
-      {/* <NewNavbar/> */}
+      {/* <MyNavbar /> */}
+      <NewNavbar/>
       <Routes>
         <Route index element={<Home />} />
         <Route path="/services" element={<Services />} />
@@ -40,7 +41,12 @@ function App() {
         <Route path="services/implants" element={<Implants />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/warranty" element={<Warranty />} />
+<<<<<<< HEAD
         <Route path="/before-after" element={<BeforeAfter />} />
+=======
+        <Route path="/beforeafter" element={<BeforeAfter />} />
+        <Route path="/new-patients"element={<NewPatients />} />
+>>>>>>> 34cfd0f4c4d28e534385fd921ed1bf2e3855aec1
       </Routes>
       <Footer />
     </div>
