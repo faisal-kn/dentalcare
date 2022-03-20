@@ -5,6 +5,9 @@ import { HiLocationMarker } from "react-icons/hi";
 import { BiTimeFive } from "react-icons/bi";
 import doctor from "../assets/doctor.jpg";
 import about from "../assets/about.jpg";
+import doctor1 from "../assets/doctor1.jpg";
+import Banner from "../components/Banner";
+import home_styles from '../assets/css/Home.module.css';
 import VisitUs from "../components/VisitUs";
 
 const dummyData = [" empathy", " integrity", " gratitude"];
@@ -23,33 +26,69 @@ const AboutUs = () => {
     }, 5000);
   }, []);
 
+  useEffect(() => {
+    const observer1 = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add(`${home_styles.aniLeftToRight}`);
+          return;
+        }
+
+        entry.target.classList.remove(`${home_styles.aniLeftToRight}`);
+      });
+    });
+
+    const observer2 = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add(`${home_styles.aniRightToLeft}`);
+          return;
+        }
+        entry.target.classList.remove(`${home_styles.aniRightToLeft}`);
+      });
+    });
+
+    const observer3 = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add(`${home_styles.aniBottomToTop}`);
+          return;
+        }
+        entry.target.classList.remove(`${home_styles.aniBottomToTop}`);
+      });
+    });
+
+    const observer4 = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add(`${home_styles.aniTopToBottom}`);
+          return;
+        }
+        entry.target.classList.remove(`${home_styles.aniTopToBottom}`);
+      });
+    });
+
+    const check1 = document.getElementById("about_text1");
+    const check2 = document.getElementById("about_text2");
+    const imgcheck1 = document.getElementById("about_img1");
+    const imgcheck3 = document.getElementById("about_check4");
+    const imgcheck4 = document.getElementById("about_bottomani");
+    const imgcheck5 = document.getElementById("about_topani");
+    
+    observer3.observe(check1);
+    observer1.observe(check2);
+    // observer2.observe(imgcheck1);
+    // observer3.observe(imgcheck3);
+    // observer3.observe(imgcheck4);
+    // observer4.observe(imgcheck5);
+  }, []);
+
   useEffect(() => {}, [currentText]);
   return (
-    <>
-      <div
-        className={styles.landingContainer}
-        style={{
-          height: "100 vh",
-        }}
-      >
-        <img
-          effect="blur"
-          src={about}
-          style={{
-            height: "95vh",
-            minWidth: "100vw",
-            objectFit: "cover",
-            opacity: "0.7",
-          }}
-          alt=""
-        />
-        <div className={styles.landingTitle}>
-          ABOUT VILLAGE DENTAL
-          <h2>Building lifetime relationships through positive experiences</h2>
-          <p>OR CALL (303) 220-7662</p>
-        </div>
-      </div>
-      <Container className={styles.firstContainer}>
+    <div>
+      <Banner />
+      <div style={{backgroundColor:'white'}}>
+      <Container className={styles.firstContainer} id='about_text1'>
         <Row>
           <Col lg={7} className={styles.mainContainer}>
             <h1 style={{ paddingBottom: "30px" }}>
@@ -99,7 +138,7 @@ const AboutUs = () => {
           </Col>
         </Row>
       </Container>
-      <Container>
+      </div>
         <Row className={styles["doctor-row"]} style={{ margin: "20px" }}>
           <Col
             lg={4}
@@ -255,32 +294,32 @@ const AboutUs = () => {
             </Row>
           </Col>
         </Row>
-        {/* <VisitUs/> */}
-        {/* <Row>
-          <Col></Col>
-          <Col>
-            <h2>Visit Us</h2>
-            <p>
-              We’re conveniently located in the Denver Tech Center area. Find us
-              on the 4th floor of the Triad Office Park building. Plenty of free
-              parking available.
-            </p>
-            <div>
-              <HiLocationMarker size="2em" style={{ color: "#316A80" }} />
-              5670 Greenwood Plaza Blvd., Suite 404 Greenwood Village, CO 80111
+      <div className={home_styles.row_5}>
+        <Container fluid style={{ padding: "30px 0 30px 0" }}>
+          <div className={`${home_styles.parallax} ${home_styles.p2}`}>
+            <div className={home_styles.card} id='about_text2'>
+              <h1 style={{ fontSize: "50px", paddingBottom: "20px" }}>
+                How It Works
+              </h1>
+              <ul style={{ fontSize: "18px" }}>
+                <li>
+                  Our warranty applies to all restorative dental treatments
+                </li>
+                <li>
+                  Visit Village Dental every 6 months for routine cleanings &
+                  exams
+                </li>
+                <li>If something breaks, contact us. We’ll fix it.</li>
+              </ul>
             </div>
-            <br />
-            <div>
-              <BiTimeFive size="2em" style={{ color: "#316A80" }} />
-              Monday–Thursday: 7AM–3PM
-            </div>
-          </Col>
-        </Row>
+          </div>
+        </Container>
+      </div>
+        <VisitUs/>
         <Row className={styles.mapContainer}>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7756.576108193791!2d80.04318612605061!3d13.579204961837346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4d76fcef996f57%3A0x645caee60af97355!2sPudi%2C%20Andhra%20Pradesh%20524401!5e0!3m2!1sen!2sin!4v1646929611895!5m2!1sen!2sin"></iframe>
-        </Row> */}
-      </Container>
-    </>
+        </Row>
+    </div>
   );
 };
 

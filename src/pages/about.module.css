@@ -86,29 +86,6 @@
   margin-top: 200px;
 }
 
-.img1:hover {
-  z-index: 10;
-}
-.img2:hover {
-  z-index: 9;
-}
-.img3:hover {
-  z-index: 8;
-}
-
-.img1,
-.img2,
-.img3 {
-  transition: all 2s;
-}
-
-.img1:hover,
-.img2:hover,
-.img3:hover {
-  -webkit-tranform: rotate(360deg);
-  transform: rotate(360deg);
-}
-
 .mapContainer {
   padding-top: 50px;
   padding-bottom: 100px;
@@ -182,6 +159,7 @@
   padding: 80px;
   display: flex;
   justify-content: center;
+  background-color: white;
 }
 
 .imgTriangle {
@@ -195,25 +173,6 @@
   font-weight: "500";
 }
 
-@media screen and (max-width: 768px) {
-  .firstContainer {
-    padding: 30px;
-  }
-  .container {
-    /* padding: 30px;
-    margin: 20px;
-    margin-right: 20px; */
-  }
-  .imagezero {
-    width: 100%;
-  }
-  .container {
-    padding: 30px;
-  }
-  .headingTitle {
-    font-size: 20px;
-  }
-}
 .videoContainer {
   width: 100%;
   height: 70%;
@@ -248,6 +207,47 @@
   padding: 50px 0 50px 0;
 }
 
+@media screen and (max-width: 768px) {
+  .firstContainer {
+    padding: 30px;
+  }
+  .container {
+    /* padding: 30px;
+    margin: 20px;
+    margin-right: 20px; */
+  }
+  .imagezero {
+    width: 100%;
+  }
+  .container {
+    padding: 30px;
+  }
+  .headingTitle {
+    font-size: 20px;
+  }
+}
+
+.visitcontainer {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.top-right {
+  position: absolute;
+  top: -10px;
+  padding: 25px;
+  /* margin: 20px; */
+  background-color: #316a80;
+  right: 16px;
+  font-size: 20px;
+}
+
+.imageUs {
+  width: 80%;
+  height: 100%;
+}
+
 @media screen and (max-width: 1000px) {
   .mainContainer {
     padding-right: 0;
@@ -259,5 +259,8 @@
 
   .doctor-row {
     padding: 20px 0 20px 0;
+  }
+  .imageUs {
+    padding-bottom: 20px;
   }
 }
