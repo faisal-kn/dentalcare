@@ -15,53 +15,6 @@ import footericon2 from "../assets/img/footer_icon2.png";
 import footericon3 from "../assets/img/footer_icon3.png";
 import footericon4 from "../assets/img/footer_icon4.png";
 import footericon5 from "../assets/img/footer_icon5.png";
-import ImageHolder from "../components/ImageHolder";
-const imageUrl = [
-  {
-    img1: "https://www.villagedentaldtc.com/wp-content/uploads/2021/12/crowns-bonding-before-village-dental.jpeg",
-    img2: "https://www.villagedentaldtc.com/wp-content/uploads/2021/12/crowns-bonding-after-village-dental.jpeg",
-    title: `Crowns &
-Bonding`,
-  },
-  {
-    img1: "https://www.villagedentaldtc.com/wp-content/uploads/2021/12/implants-invisalign-before-village-dental.jpeg.jpeg",
-    img2: "https://www.villagedentaldtc.com/wp-content/uploads/2021/12/implants-invisalign-after-village-dental.jpeg",
-    title: `Dental Implants &
-Invisalign`,
-  },
-  {
-    img1: "https://www.villagedentaldtc.com/wp-content/uploads/2021/12/crown-lengthening-before-village-dental.jpeg",
-    img2: "https://www.villagedentaldtc.com/wp-content/uploads/2021/12/crown-lengthening-after-village-dental.jpeg",
-    title: `Crown
-Lengthening`,
-  },
-  {
-    img1: "https://www.villagedentaldtc.com/wp-content/uploads/2021/12/teeth-in-a-day-before-village-dental.jpeg",
-    img2: "https://www.villagedentaldtc.com/wp-content/uploads/2021/12/teeth-in-a-day-after-village-dental.jpeg",
-    title: `Teeth in a Day
-(replacing a bridge with implants)
-`,
-  },
-  {
-    img1: "https://www.villagedentaldtc.com/wp-content/uploads/2021/12/implants-front-before-village-dental.jpeg",
-    img2: "https://www.villagedentaldtc.com/wp-content/uploads/2021/12/implants-front-after-village-dental.jpeg",
-    title: `Dental Implants
-(replacing front teeth)
-`,
-  },
-  {
-    img1: "https://www.villagedentaldtc.com/wp-content/uploads/2021/12/full-mouth-rehab-before-village-dental.jpeg",
-    img2: "https://www.villagedentaldtc.com/wp-content/uploads/2021/12/full-mouth-rehab-after-village-dental.jpeg",
-    title: `Full Mouth
-Rehabilitation`,
-  },
-  {
-    img1: "https://www.villagedentaldtc.com/wp-content/uploads/2021/12/implant-and-crown-lengthening-before-village-dental.jpeg",
-    img2: "https://www.villagedentaldtc.com/wp-content/uploads/2021/12/implant-and-crown-lengthening-after-village-dental.jpeg",
-    title: `Dental Implant &
-Crown Lengthening`,
-  },
-];
 
 const Home = () => {
   useEffect(() => {
@@ -71,6 +24,7 @@ const Home = () => {
           entry.target.classList.add(`${styles.aniLeftToRight}`);
           return;
         }
+
         entry.target.classList.remove(`${styles.aniLeftToRight}`);
       });
     });
@@ -111,6 +65,7 @@ const Home = () => {
     const imgcheck3 = document.getElementById("check4");
     const imgcheck4 = document.getElementById("bottomani");
     const imgcheck5 = document.getElementById("topani");
+
     observer1.observe(check1);
     observer1.observe(check2);
     observer2.observe(imgcheck1);
@@ -144,7 +99,7 @@ const Home = () => {
       <div className={styles.row_2}>
         <div className={styles.my_cards}>
           <Row>
-            <Col md="6" sm="12">
+            <Col md="6" sm="12" className={styles.ani} id="text1">
               <Row>
                 <div
                   className={styles.banner_heading}
@@ -161,7 +116,7 @@ const Home = () => {
                 </p>
               </Row>
               <Row>
-                <ul style={{ listStyleImage: `url(${tick})` }}>
+                <ul style={{ listStyleImage: tick }}>
                   <li>Transparent Pricing</li>
                   <li>Unparalleled Warranty</li>
                   <li>FREE Whitening (for life!)</li>
@@ -173,25 +128,19 @@ const Home = () => {
               </Row>
             </Col>
             <Col md="6" sm="12">
-              <img className={styles.row_image} src={row_2} alt="" />
+              <img className={styles.row_image} src={row_2} alt="" id="img1" />
             </Col>
           </Row>
         </div>
       </div>
-      <div style={{ margin: "25px 0" }}>
-        <h1 className={styles.imagehead}>Before/After</h1>
-        <div className={styles.imagegrid}>
-          {imageUrl.map(({ title, img1, img2 }) => {
-            return <ImageHolder title={title} img1={img1} img2={img2} />;
-          })}
-        </div>
-      </div>
-
-      <div className={styles.row_3}>
+      <div className={styles.row_3} id="text2">
         <Row>
           <Col>
             <p>
-              <p className={styles.comma_img}>"</p>
+              <p className={styles.comma_img}>
+                {" "}
+                <RiDoubleQuotesR />{" "}
+              </p>
             </p>
             <p className={styles.banner_heading}>
               Kind words from our patients
@@ -205,8 +154,11 @@ const Home = () => {
             </p>
             <p className={styles.underline_text}>850+ 5-star reviews!</p>
           </Col>
-          <Col lg="4" md="12">
-            <Card className={styles.my_card}>
+          <Col lg="4" md="12" className={styles.my_card_cont}>
+            <Card
+              className={styles.my_card}
+              style={{ backgroundColor: "#F4F6F3" }}
+            >
               Unlike other Greenwood Village dentists, Village Dental takes you
               where you’re at rather than chastising or shaming. I can’t
               recommend them highly enough. You will be well cared for!
@@ -220,10 +172,10 @@ const Home = () => {
               </p>
             </Card>
           </Col>
-          <Col lg="4" md="12">
+          <Col lg="4" md="12" className={styles.my_card_cont}>
             <Card
               className={styles.my_card}
-              style={{ backgroundColor: "yellow" }}
+              style={{ backgroundColor: "rgba(231,202,113,0.9)" }}
             >
               Unlike other Greenwood Village dentists, Village Dental takes you
               where you’re at rather than chastising or shaming. I can’t
@@ -242,7 +194,7 @@ const Home = () => {
         <Row className="d-flex justify-content-end">
           <Card
             className={styles.my_card + " " + styles.my_card_3}
-            style={{ backgroundColor: "skyblue" }}
+            style={{ backgroundColor: "#9DBEBB" }}
           >
             Unlike other Greenwood Village dentists, Village Dental takes you
             where you’re at rather than chastising or shaming. I can’t recommend
@@ -258,13 +210,13 @@ const Home = () => {
           </Card>
         </Row>
       </div>
-      <div className={styles.row_4}>
+      <div className={styles.row_4} id="check4">
         <Container fluid className="d-flex flex-column align-items-center">
           <h1 className="pb-4 mb-4">
             Comprehensive care, one convenient location
           </h1>
           <Container className="d-flex">
-            <Row>
+            <Row id="check4">
               <Col lg="4" md="12" sm="12" className="mt-4">
                 <Card className={styles.my_custom_cards}>
                   <Card.Img
@@ -342,7 +294,7 @@ const Home = () => {
               <h1 style={{ fontSize: "50px", paddingBottom: "20px" }}>
                 How It Works
               </h1>
-              <ul style={{ fontSize: "18px", listStyleImage: `url(${tick})` }}>
+              <ul style={{ fontSize: "18px" }}>
                 <li>
                   Our warranty applies to all restorative dental treatments
                 </li>
@@ -359,7 +311,13 @@ const Home = () => {
       <Container fluid="md" className={styles.row_6}>
         <Card className={styles.row6_card}>
           <Row style={{ margin: "0px" }}>
-            <Col lg="6" md="6" sm="12" className={styles.row6_col1}>
+            <Col
+              lg="6"
+              md="6"
+              sm="12"
+              className={styles.row6_col1}
+              id="bottomani"
+            >
               <Row className="d-flex justify-content-start">
                 <RiPriceTag2Fill size={40} style={{ width: "7rem" }} />
               </Row>
@@ -379,7 +337,7 @@ const Home = () => {
                 </p>
               </Row>
             </Col>
-            <Col lg="6" md="6" sm="12" className={styles.row6_col2}>
+            <Col lg="6" md="6" sm="12" className={styles.row6_col2} id="topani">
               <Row>
                 <h2>Insurance</h2>
               </Row>
@@ -398,37 +356,37 @@ const Home = () => {
         </Card>
       </Container>
       <div className={styles.row_7}>
-        <Container>
+        <Container fluid>
           <Row>
-            <Col className={styles.footer_icons} style={{ width: "50%" }}>
+            <Col className={styles.footer_icons}>
               <img
                 style={{ height: "inherit", width: "inherit" }}
                 src={footericon1}
                 alt=""
               />
             </Col>
-            <Col className={styles.footer_icons} style={{ width: "80%" }}>
+            <Col className={styles.footer_icons}>
               <img
                 style={{ height: "inherit", width: "inherit" }}
                 src={footericon2}
                 alt=""
               />
             </Col>
-            <Col className={styles.footer_icons} style={{ width: "80%" }}>
+            <Col className={styles.footer_icons}>
               <img
                 style={{ height: "inherit", width: "inherit" }}
                 src={footericon3}
                 alt=""
               />
             </Col>
-            <Col className={styles.footer_icons} style={{ width: "70%" }}>
+            <Col className={styles.footer_icons}>
               <img
                 style={{ height: "inherit", width: "inherit" }}
                 src={footericon4}
                 alt=""
               />
             </Col>
-            <Col className={styles.footer_icons} style={{ width: "80%" }}>
+            <Col className={styles.footer_icons}>
               <img
                 style={{ height: "inherit", width: "inherit" }}
                 src={footericon5}
