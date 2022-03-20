@@ -5,8 +5,8 @@ import { HiLocationMarker } from "react-icons/hi";
 import { BiTimeFive } from "react-icons/bi";
 import doctor from "../assets/doctor.jpg";
 import about from "../assets/about.jpg";
-import VisitUs from "../components/VisitUs";
 import doctor1 from "../assets/doctor1.jpg";
+import Banner from "../components/Banner";
 
 const dummyData = [" empathy", " integrity", " gratitude"];
 const AboutUs = () => {
@@ -26,30 +26,8 @@ const AboutUs = () => {
 
   useEffect(() => {}, [currentText]);
   return (
-    <>
-      <div
-        className={styles.landingContainer}
-        style={{
-          height: "100 vh",
-        }}
-      >
-        <img
-          effect="blur"
-          src={about}
-          style={{
-            height: "95vh",
-            minWidth: "100vw",
-            objectFit: "cover",
-            opacity: "0.7",
-          }}
-          alt=""
-        />
-        <div className={styles.landingTitle}>
-          ABOUT VILLAGE DENTAL
-          <h2>Building lifetime relationships through positive experiences</h2>
-          <p>OR CALL (303) 220-7662</p>
-        </div>
-      </div>
+    <div>
+      <Banner />
       <Container className={styles.firstContainer}>
         <Row>
           <Col lg={7} className={styles.mainContainer}>
@@ -285,7 +263,7 @@ const AboutUs = () => {
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7756.576108193791!2d80.04318612605061!3d13.579204961837346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4d76fcef996f57%3A0x645caee60af97355!2sPudi%2C%20Andhra%20Pradesh%20524401!5e0!3m2!1sen!2sin!4v1646929611895!5m2!1sen!2sin"></iframe>
         </Row>
       </Container>
-    </>
+    </div>
   );
 };
 
