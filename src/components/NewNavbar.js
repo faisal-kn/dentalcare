@@ -57,88 +57,88 @@ const NewNavbar = () => {
           <ul className={styles["nav-list"]}>
             <li className={styles["span-nav"]}></li>
             <li>
-              <HashLink smooth to="/aboutus">
+              <HashLink smooth to="/about-us">
                 ABOUT
               </HashLink>
               <ul className={styles["sub-menu"]}>
                 <li>
-                  <HashLink smooth to="/beforeafter">
+                  <HashLink smooth to="/before-after">
                     BEFORE AND AFTER
                   </HashLink>
                 </li>
               </ul>
             </li>
             <li>
-              <HashLink smooth to="/aboutus">
+              <HashLink smooth to="/services">
                 SERVICES
               </HashLink>
               <ul className={styles["sub-menu"]}>
                 <li>
-                  <HashLink smooth to="/beforeafter">
+                  <HashLink smooth to="/services">
                     GENERAL
                   </HashLink>
                   <ul className={styles["sub-menu"]}>
                     <li>
-                      <HashLink smooth to="/beforeafter">
+                      <HashLink smooth to="/services/botox">
                         BOTOX
                       </HashLink>
                     </li>
                     <li>
-                      <HashLink smooth to="/beforeafter">
+                      <HashLink smooth to="/services/cleanings">
                         CLEANINGS & EXAMS
                       </HashLink>
                     </li>
                     <li>
-                      <HashLink smooth to="/beforeafter">
+                      <HashLink smooth to="/services/emergency">
                         EMERGENCY CARE
                       </HashLink>
                     </li>
                     <li>
-                      <HashLink smooth to="/beforeafter">
+                      <HashLink smooth to="/services/crowns">
                         CROWNS
                       </HashLink>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <HashLink smooth to="/beforeafter">
+                  <HashLink smooth to="/services/cosmetic">
                     COSMETIC
                   </HashLink>
                   <ul className={styles["sub-menu"]}>
                     <li>
-                      <HashLink smooth to="/beforeafter">
+                      <HashLink smooth to="/services/invisalign">
                         INVISALIGN
                       </HashLink>
                     </li>
                     <li>
-                      <HashLink smooth to="/beforeafter">
+                      <HashLink smooth to="/services/botox">
                         BOTOX
                       </HashLink>
                     </li>
                     <li>
-                      <HashLink smooth to="/beforeafter">
+                      <HashLink smooth to="/services/teeth-whitening">
                         TEETH WHITENING
                       </HashLink>
                     </li>
                     <li>
-                      <HashLink smooth to="/beforeafter">
+                      <HashLink smooth to="/services/bonding">
                         BONDING
                       </HashLink>
                     </li>
                     <li>
-                      <HashLink smooth to="/beforeafter">
+                      <HashLink smooth to="/services/veneers">
                         VENEERS
                       </HashLink>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <HashLink smooth to="/beforeafter">
+                  <HashLink smooth to="/services/surgical">
                     SURGICAL
                   </HashLink>
                   <ul className={styles["sub-menu"]}>
                     <li>
-                      <HashLink smooth to="/beforeafter">
+                      <HashLink smooth to="/services/implants">
                         IMPLANTS
                       </HashLink>
                     </li>
@@ -147,7 +147,7 @@ const NewNavbar = () => {
               </ul>
             </li>
             <li>
-              <HashLink smooth to="/Warranty">
+              <HashLink smooth to="/warranty">
                 WARRANTY
               </HashLink>
             </li>

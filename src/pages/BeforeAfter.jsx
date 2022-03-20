@@ -1,7 +1,7 @@
 import React from 'react'
 import Banner from '../components/Banner';
 import ImageHolder from '../components/ImageHolder';
-import styles from './BeforeAfter.module.css'
+import styles from '../assets/css/Home.module.css';
 
 export default function BeforeAfter() {
   const imageUrl = [

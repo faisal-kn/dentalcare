@@ -77,7 +77,7 @@ const AboutUs = () => {
     
     observer3.observe(check1);
     observer1.observe(check2);
-    // observer2.observe(imgcheck1);
+    observer2.observe(imgcheck1);
     // observer3.observe(imgcheck3);
     // observer3.observe(imgcheck4);
     // observer4.observe(imgcheck5);
@@ -88,9 +88,9 @@ const AboutUs = () => {
     <div>
       <Banner />
       <div style={{backgroundColor:'white'}}>
-      <Container className={styles.firstContainer} id='about_text1'>
+      <Container className={styles.firstContainer} >
         <Row>
-          <Col lg={7} className={styles.mainContainer}>
+          <Col lg={7} className={styles.mainContainer} id='about_text1'>
             <h1 style={{ paddingBottom: "30px" }}>
               Serving Patients with
               <span style={{ color: "#316A80" }}>{currentText}</span>
@@ -117,6 +117,7 @@ const AboutUs = () => {
           <Col
             lg={5}
             className={`${styles.container} d-flex justify-content-center align-items-center flex-column`}
+            id='about_img1'
           >
             <img
               className={styles.imagezero}

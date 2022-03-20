@@ -31,22 +31,17 @@ function App() {
         <Route path="/services/botox" element={<Botox />} />
         <Route path="/services/cleanings" element={<Cleanings />} />
         <Route path="/services/emergency" element={<Emergency />} />
-        <Route path="services/crowns" element={<Crowns />} />
+        <Route path="/services/crowns" element={<Crowns />} />
         <Route path="/services/cosmetic" element={<Cosmetic />} />
-        <Route path="services/invisalign" element={<Invisalign />} />
+        <Route path="/services/invisalign" element={<Invisalign />} />
         <Route path="/services/teeth-whitening" element={<TeethWhitening />} />
         <Route path="/services/bonding" element={<Bonding />} />
-        <Route path="services/veneers" element={<Veneers />} />
-        <Route path="services/surgical" element={<Surgical />} />
-        <Route path="services/implants" element={<Implants />} />
-        <Route path="/aboutus" element={<AboutUs />} />
+        <Route path="/services/veneers" element={<Veneers />} />
+        <Route path="/services/surgical" element={<Surgical />} />
+        <Route path="/services/implants" element={<Implants />} />
+        <Route path="/about-us" element={<AboutUs />} />
         <Route path="/warranty" element={<Warranty />} />
-<<<<<<< HEAD
         <Route path="/before-after" element={<BeforeAfter />} />
-=======
-        <Route path="/beforeafter" element={<BeforeAfter />} />
-        <Route path="/new-patients"element={<NewPatients />} />
->>>>>>> 34cfd0f4c4d28e534385fd921ed1bf2e3855aec1
       </Routes>
       <Footer />
     </div>
