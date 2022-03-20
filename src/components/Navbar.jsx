@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   Navbar,
   Container,
@@ -10,6 +10,8 @@ import {
 import "./navbar.css";
 
 const MyNavbar = () => {
+
+
   return (
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
       <div class="container-fluid">

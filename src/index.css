@@ -35,3 +35,11 @@
     transform: translateX(0);
   }
 }
+.dropdown-toggle :hover{
+  display: block;
+}
+
+
+.dropdown-menu.show :hover {
+  display: block;
+}
