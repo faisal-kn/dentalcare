@@ -30,7 +30,7 @@ const Services = () => {
 	  }
 	return (
 		<div>
-			<Banner/>
+			<Banner text='GENERAL DENTAL CARE IN DENVER TECH CENTER, CO' heading='Everything you expect and then some'/>
 			<div className={service_styles.row_2}>
 				<div className={service_styles.row_2_cards}>
 					<Row>

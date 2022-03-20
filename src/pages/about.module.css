@@ -87,6 +87,7 @@
 }
 
 .mapContainer {
+  padding: 0 10rem;
   padding-top: 50px;
   padding-bottom: 100px;
 }
@@ -135,6 +136,10 @@
   .landingTitle {
     font-size: 4vw;
     width: 100%;
+  }
+  .mapContainer {
+    padding-left: 7rem;
+    padding-right: 7rem;
   }
 }
 
@@ -211,11 +216,6 @@
   .firstContainer {
     padding: 30px;
   }
-  .container {
-    /* padding: 30px;
-    margin: 20px;
-    margin-right: 20px; */
-  }
   .imagezero {
     width: 100%;
   }
@@ -224,6 +224,9 @@
   }
   .headingTitle {
     font-size: 20px;
+  }
+  .mapContainer {
+    padding: 3rem 1rem;
   }
 }
 

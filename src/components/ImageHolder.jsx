@@ -3,7 +3,7 @@ import classes from './component.module.css';
 
 export default function ImageHolder({title,img1,img2}) {
 
-  const [left,setLeft] = useState(0);
+  const [left,setLeft] = useState(30);
   const div = useRef(null);
 
   return (

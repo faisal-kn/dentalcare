@@ -66,14 +66,14 @@ const AboutUs = () => {
     });
 
     const check1 = document.getElementById("about_text1");
-    const check2 = document.getElementById("about_text2");
+    // const check2 = document.getElementById("about_text2");
     const imgcheck1 = document.getElementById("about_img1");
-    const imgcheck3 = document.getElementById("about_check4");
-    const imgcheck4 = document.getElementById("about_bottomani");
-    const imgcheck5 = document.getElementById("about_topani");
+    // const imgcheck3 = document.getElementById("about_check4");
+    // const imgcheck4 = document.getElementById("about_bottomani");
+    // const imgcheck5 = document.getElementById("about_topani");
     
     observer3.observe(check1);
-    observer1.observe(check2);
+    // observer1.observe(check2);
     observer2.observe(imgcheck1);
     // observer3.observe(imgcheck3);
     // observer3.observe(imgcheck4);
@@ -83,7 +83,7 @@ const AboutUs = () => {
   useEffect(() => {}, [currentText]);
   return (
     <div>
-      <Banner />
+      <Banner text='ABOUT VILLAGE DENTAL' heading='Building lifetime relationships through positive experiences'/>
       <div style={{backgroundColor:'white'}}>
       <Container className={styles.firstContainer} >
         <Row>

@@ -3,7 +3,7 @@ import { Container} from "react-bootstrap";
 import home_styles from "../assets/css/Home.module.css";
 import banner_img from "../assets/img/bg_1.jpg";
 
-const Banner = ({ image = banner_img }) => {
+const Banner = ({ image = banner_img ,heading,text}) => {
   useEffect(()=>{
     const observer3 = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -23,10 +23,10 @@ const Banner = ({ image = banner_img }) => {
       <img className={home_styles.banner_video} src={image} alt="" />
       <Container fluid className={home_styles.banner_text}>
         <div className={home_styles.banner_inner_text}>
-          GENERAL DENTAL CARE IN DENVER TECH CENTER, CO
+          {text?text:'GENERAL DENTAL CARE IN DENVER TECH CENTER, CO'}
         </div>
         <div className={home_styles.banner_heading} id='banner_text2'>
-          Everything you expect and <br /> then some
+          {heading?heading:'Everything you expect and then some'}
         </div>
       </Container>
     </div>

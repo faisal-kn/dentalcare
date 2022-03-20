@@ -5,6 +5,8 @@ import { HashLink } from "react-router-hash-link";
 import { useLocation } from "react-router-dom";
 import logo from "../assets/img/logo.png";
 import { FaBars, FaCross } from "react-icons/fa";
+import home_styles from '../assets/css/Home.module.css';
+
 const breakpoint = 960;
 
 const NewNavbar = () => {
@@ -24,6 +26,21 @@ const NewNavbar = () => {
       setColorchange(false);
     }
   };
+  useEffect(()=>{
+    const observer3 = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add(`${home_styles.aniBottomToTop}`);
+          return;
+        }
+        entry.target.classList.remove(`${home_styles.aniBottomToTop}`);
+      });
+    });
+    const check1 = document.getElementById("nav_text1");
+
+    observer3.observe(check1);
+  },[])
+
   useEffect(() => {
     window.addEventListener("resize", () => setWidth(window.innerWidth));
     window.addEventListener("scroll", changeNavbarColor);
@@ -35,6 +52,7 @@ const NewNavbar = () => {
           className={`${colorChange ? styles.scroll : ""} ${
             isActive ? styles.active : " "
           }`}
+          id='nav_text1'
         >
           <div
             className={`${styles["menu-icons"]} menu-iconss`}

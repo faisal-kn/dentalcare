@@ -15,6 +15,7 @@
 .banner_text {
   padding: 15% 8%;
   color: white;
+  width: 75%;
 }
 
 .banner_inner_text {
@@ -360,7 +361,7 @@
 }
 @media screen and (max-width: 768px) {
   .banner_text {
-    padding: 10% 5%;
+    padding: 20% 5%;
   }
   .banner_inner_text {
     font-size: 0.9em;

@@ -1,10 +1,9 @@
 import React,{useEffect} from 'react'
-import { Row,Col } from 'react-bootstrap';
+import { Row,Col,Container } from 'react-bootstrap';
 import {HiLocationMarker} from 'react-icons/hi';
 import {BiTimeFive} from 'react-icons/bi';
 import styles from '../assets/css/Home.module.css';
 import doctor1 from "../assets/doctor1.jpg";
-import about_styles from "../pages/about.module.css";
 
 
 const VisitUs = () => {
@@ -62,9 +61,11 @@ const VisitUs = () => {
             </div>
           </Col>
         </Row>
-		<Row className={about_styles.mapContainer}>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7756.576108193791!2d80.04318612605061!3d13.579204961837346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4d76fcef996f57%3A0x645caee60af97355!2sPudi%2C%20Andhra%20Pradesh%20524401!5e0!3m2!1sen!2sin!4v1646929611895!5m2!1sen!2sin"></iframe>
+        <Container style={{paddingBottom:'4rem'}}>
+		<Row>
+          <iframe title='hospital-map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7756.576108193791!2d80.04318612605061!3d13.579204961837346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4d76fcef996f57%3A0x645caee60af97355!2sPudi%2C%20Andhra%20Pradesh%20524401!5e0!3m2!1sen!2sin!4v1646929611895!5m2!1sen!2sin"></iframe>
         </Row>
+        </Container>
 	</>
   )
 }

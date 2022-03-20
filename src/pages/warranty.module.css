@@ -28,14 +28,12 @@
 
 .firstContainer {
   padding: 30px;
+  display: flex;
+  justify-content: center;
 }
 
 .imgContainer {
   height: 700px;
-}
-
-.image {
-  /* height: 700px; */
 }
 
 .parallax {
