@@ -304,12 +304,14 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
 .imagehead {
   text-align: center;
   font-family: "Times New Roman", Times, serif;
   font-weight: 700;
   font-size: "45px";
 }
+
 @media screen and (max-width: 800px) {
   .imagegrid {
     grid-template-columns: 1fr;
