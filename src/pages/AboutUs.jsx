@@ -1,14 +1,11 @@
 import styles from "./about.module.css";
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { HiLocationMarker } from "react-icons/hi";
-import { BiTimeFive } from "react-icons/bi";
 import doctor from "../assets/doctor.jpg";
-import about from "../assets/about.jpg";
-import doctor1 from "../assets/doctor1.jpg";
 import Banner from "../components/Banner";
 import home_styles from '../assets/css/Home.module.css';
 import VisitUs from "../components/VisitUs";
+import Parallax from "../components/Parallax";
 
 const dummyData = [" empathy", " integrity", " gratitude"];
 const AboutUs = () => {
@@ -295,31 +292,8 @@ const AboutUs = () => {
             </Row>
           </Col>
         </Row>
-      <div className={home_styles.row_5}>
-        <Container fluid style={{ padding: "30px 0 30px 0" }}>
-          <div className={`${home_styles.parallax} ${home_styles.p2}`}>
-            <div className={home_styles.card} id='about_text2'>
-              <h1 style={{ fontSize: "50px", paddingBottom: "20px" }}>
-                How It Works
-              </h1>
-              <ul style={{ fontSize: "18px" }}>
-                <li>
-                  Our warranty applies to all restorative dental treatments
-                </li>
-                <li>
-                  Visit Village Dental every 6 months for routine cleanings &
-                  exams
-                </li>
-                <li>If something breaks, contact us. We’ll fix it.</li>
-              </ul>
-            </div>
-          </div>
-        </Container>
-      </div>
+      <Parallax/>
         <VisitUs/>
-        <Row className={styles.mapContainer}>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7756.576108193791!2d80.04318612605061!3d13.579204961837346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4d76fcef996f57%3A0x645caee60af97355!2sPudi%2C%20Andhra%20Pradesh%20524401!5e0!3m2!1sen!2sin!4v1646929611895!5m2!1sen!2sin"></iframe>
-        </Row>
     </div>
   );
 };

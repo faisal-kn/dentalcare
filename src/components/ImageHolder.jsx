@@ -1,5 +1,5 @@
 import React,{useState,useRef} from 'react';
-import classes from './ImageHolder.module.css';
+import classes from './component.module.css';
 
 export default function ImageHolder({title,img1,img2}) {
 

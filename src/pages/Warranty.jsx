@@ -1,4 +1,3 @@
-import about from "../assets/about.jpg";
 import styles from "./warranty.module.css";
 import { Container, Col, Row } from "react-bootstrap";
 import { useState, useEffect } from "react";
@@ -6,6 +5,7 @@ import Banner from "../components/Banner";
 import doctor1 from "../assets/doctor1.jpg";
 import { HiLocationMarker } from "react-icons/hi";
 import { BiTimeFive } from "react-icons/bi";
+import Parallax from "../components/Parallax";
 
 const Warranty = () => {
   const [width, setWidth] = useState(window.innerWidth);
@@ -127,25 +127,7 @@ const Warranty = () => {
             </Col>
           </Row>
         </Container>
-        <Container fluid style={{ padding: "30px 0 30px 0" }}>
-          <div className={`${styles.parallax} ${styles.p2}`}>
-            <div className={styles.card}>
-              <h1 style={{ fontSize: "50px", paddingBottom: "20px" }}>
-                How It Works
-              </h1>
-              <ul style={{ fontSize: "18px" }}>
-                <li>
-                  Our warranty applies to all restorative dental treatments
-                </li>
-                <li>
-                  Visit Village Dental every 6 months for routine cleanings &
-                  exams
-                </li>
-                <li>If something breaks, contact us. We’ll fix it.</li>
-              </ul>
-            </div>
-          </div>
-        </Container>
+        <Parallax/>
         <Container style={{ padding: "40px" }}>
           <Row>
             <Col

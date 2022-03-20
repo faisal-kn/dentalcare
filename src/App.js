@@ -1,4 +1,3 @@
-import MyNavbar from "./components/Navbar";
 import NewNavbar from "./components/NewNavbar";
 import Footer from "./components/Footer";
 import AboutUs from "./pages/AboutUs";

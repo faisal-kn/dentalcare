@@ -6,10 +6,9 @@ import tick from '../../../assets/img/tick-svgrepo-com.svg';
 import row_3_img from '../../../assets/img/ser_row2.jpg';
 import home_styles from '../../../assets/css/Home.module.css';
 import row_2 from '../../../assets/img/row_2_img.jpg';
-import {AiFillPlusCircle,AiFillStar} from 'react-icons/ai';
+import {AiFillPlusCircle} from 'react-icons/ai';
 import servicetag from '../../../assets/img/service_tag.svg';
-import triangle_dot from '../../../assets/img/triangle.svg';
-import triangle_dot_white from '../../../assets/img/triangle_white.svg';
+import My_3_Cards from '../../../components/3_Cards';
 
 const Cosmetic = () => {
 	function CustomToggle({ children, eventKey }) {
@@ -199,47 +198,7 @@ const Cosmetic = () => {
 					</Row>
 				</Container>
 			</div>
-			<div className={home_styles.row_3}>
-				<Row>
-					<Col>
-						<p>
-							<p className={home_styles.comma_img}>"</p>
-						</p>
-						<p className={home_styles.banner_heading}>
-						Kind words from our patients
-						</p>
-						<p className={home_styles.star_row}>
-							<AiFillStar/>
-							<AiFillStar/>
-							<AiFillStar/>
-							<AiFillStar/>
-							<AiFillStar/>
-						</p>
-						<p className={home_styles.underline_text}>850+ 5-star reviews!</p>
-					</Col>
-					<Col lg='4' md='12'>
-					<Card className={home_styles.my_card}>
-					Unlike other Greenwood Village dentists, Village Dental takes you where you’re at rather than chastising or shaming. I can’t recommend them highly enough. You will be well cared for!
-					<p className={home_styles.card_author}>— Sherryll K.</p>
-					<p className={home_styles.card_triangle_dot}><img style={{transform:'rotate(270deg)'}} src={triangle_dot} alt="" /></p>
-					</Card>
-					</Col>
-					<Col lg='4' md='12'>
-					<Card className={home_styles.my_card} style={{backgroundColor:'#9DBEBB'}}>
-					Unlike other Greenwood Village dentists, Village Dental takes you where you’re at rather than chastising or shaming. I can’t recommend them highly enough. You will be well cared for!
-					<p className={home_styles.card_author}>— Sherryll K.</p>
-					<p className={home_styles.card_triangle_dot}><img style={{transform:'rotate(270deg)'}} src={triangle_dot} alt="" /></p>
-					</Card>
-					</Col>
-				</Row>
-				<Row className='d-flex justify-content-end' >	
-				<Card className={home_styles.my_card+' '+home_styles.my_card_3} style={{backgroundColor:'#052639',color:'white'}}>
-					Unlike other Greenwood Village dentists, Village Dental takes you where you’re at rather than chastising or shaming. I can’t recommend them highly enough. You will be well cared for!
-					<p className={home_styles.card_author}>— Sherryll K.</p>
-					<p className={home_styles.card_triangle_dot}><img style={{transform:'rotate(270deg)',color:'white'}} src={triangle_dot_white} alt="" /></p>
-					</Card>
-				</Row>
-			</div>
+			<My_3_Cards/>
 	</div>
   )
 }
