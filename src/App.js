@@ -41,6 +41,7 @@ function App() {
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/warranty" element={<Warranty />} />
         <Route path="/before-after" element={<BeforeAfter />} />
+        <Route path="/new-patients" element={<NewPatients/>} />
       </Routes>
       <Footer />
     </div>
